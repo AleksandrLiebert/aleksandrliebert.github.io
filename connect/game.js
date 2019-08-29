@@ -30,7 +30,7 @@ var gameSettings =
 }
 
 function readSettings() {
-	var s = localStorage.getItem('settings')
+	var s = localStorage.getItem('connectSettings')
 	if (s == null) {
 		saveSettings()
 	} else {
@@ -40,7 +40,7 @@ function readSettings() {
 }
 
 function saveSettings() {
-	localStorage.setItem('settings', JSON.stringify(gameSettings))
+	localStorage.setItem('connectSettings', JSON.stringify(gameSettings))
 }
 
 function rand(n) {
