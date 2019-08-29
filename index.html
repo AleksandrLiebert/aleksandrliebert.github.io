@@ -1,0 +1,84 @@
+<html>
+<head>
+  <title>Connect</title>
+  <link type="text/css" rel="stylesheet" href="app.css" />
+  <link type="text/css" rel="stylesheet" href="css/all.min.css" />
+</head>
+<body>
+  <div id="game">
+    <div class="field"></div>
+  </div>
+  <div id="panels">
+    <div class="panel-left"><i id="new-game" class="far fa-play-circle fa-click"></i><i id="get-hint" class="far fa-question-circle fa-click"></i></div>
+    <div class="panel-right"><i id="show-records" class="far fa-check-circle fa-click"></i><i id="change-mode" class="fas fa-globe-americas fa-click"></i></div>
+    <div class="score">
+      <span id="time" class="time-view">0</span>
+      <i id="pause" class="far fa-pause-circle fa-click"></i>
+    </div>
+    <div class="turns">
+      <i id="cancel-turn" class="fas fa-reply fa-click"></i>
+      <span id="turns" class="turns-view">0</span>
+    </div>
+  </div>
+  <div id="select-mode" class="panel hide">
+    <div class="close-select-mode"><i id="change-mode" class="fas fa-globe-americas fa-active"></i></div>
+    <div class="modes">
+      <div value="5" class="mode">5x5</div>
+      <div value="7" class="mode">7x7</div>
+      <div value="9" class="mode">9x9</div>
+      <div value="11" class="mode">11x11</div>
+      <div value="13" class="mode">13x13</div>
+      <div value="15" class="mode">15x15</div>
+    </div>
+  </div>
+  <div id="game-over" class="panel hide game-over-panel">
+    <div class="game-over-container">
+      <i class="far fa-clock fa-active"></i>
+      <span id="end-time" class="panel-text"></span>
+      <i class="fas fa-redo fa-active"></i>
+      <span id="end-turns" class="panel-text"></span>
+      <i class="fas fa-long-arrow-alt-up fa-active"></i>
+    </div>
+  </div>
+  <div id="records" class="panel hide records-panel">
+    <div class="records-container">
+      <span class="panel-text record-size">5x5</span>
+      <i class="far fa-clock fa-active"></i>
+      <span id="end-time-5" class="panel-text record-size">0</span>
+      <i class="fas fa-redo fa-active"></i>
+      <span id="end-turns-5" class="panel-text record-size">0</span>
+      <br />
+      <span class="panel-text record-size ">7x7</span>
+      <i class="far fa-clock fa-active"></i>
+      <span id="end-time-7" class="panel-text record-size">0</span>
+      <i class="fas fa-redo fa-active"></i>
+      <span id="end-turns-7" class="panel-text record-size">0</span>
+      <br />
+      <span class="panel-text record-size">9x9</span>
+      <i class="far fa-clock fa-active"></i>
+      <span id="end-time-9" class="panel-text record-size">0</span>
+      <i class="fas fa-redo fa-active"></i>
+      <span id="end-turns-9" class="panel-text record-size">0</span>
+      <br />
+      <span class="panel-text record-size">11x11</span>
+      <i class="far fa-clock fa-active"></i>
+      <span id="end-time-11" class="panel-text record-size">0</span>
+      <i class="fas fa-redo fa-active"></i>
+      <span id="end-turns-11" class="panel-text record-size">0</span>
+      <br />
+      <span class="panel-text record-size">13x13</span>
+      <i class="far fa-clock fa-active"></i>
+      <span id="end-time-13" class="panel-text record-size">0</span>
+      <i class="fas fa-redo fa-active"></i>
+      <span id="end-turns-13" class="panel-text record-size">0</span>
+      <br />
+      <span class="panel-text record-size">15x15</span>
+      <i class="far fa-clock fa-active"></i>
+      <span id="end-time-15" class="panel-text record-size">0</span>
+      <i class="fas fa-redo fa-active"></i>
+      <span id="end-turns-15" class="panel-text record-size">0</span>
+    </div>
+  </div>
+  <script type="text/javascript" src="game.js"></script>
+</body>
+</html>
