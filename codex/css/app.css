@@ -1,0 +1,28 @@
+body {
+	background: #000;
+}
+
+h1 {
+	font-family: 'Literata', serif;
+	color: var(--white);
+}
+
+p {
+	font-family: 'Marmelad', sans-serif;
+	color: var(--white);
+}
+
+hr {
+	width: 15rem;
+	border-top: 1px solid #fff;
+}
+
+.content {
+	font-size: 1.2rem;
+	font-family: 'Comfortaa', cursive;
+	color: var(--white);
+}
+
+.content:hover {
+	color: var(--white);
+}
