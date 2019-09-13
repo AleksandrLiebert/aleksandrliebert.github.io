@@ -34,3 +34,12 @@ hr {
 .content:hover {
 	color: var(--white);
 }
+
+.cross {
+	color: var(--white);
+	text-decoration: underline;
+}
+
+.cross:hover {
+	color: var(--red);
+}
