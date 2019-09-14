@@ -43,3 +43,12 @@ hr {
 .cross:hover {
 	color: var(--red);
 }
+
+.link {
+	color: var(--white);
+	text-decoration: underline;
+}
+
+.link:hover {
+	color: var(--blue);
+}
