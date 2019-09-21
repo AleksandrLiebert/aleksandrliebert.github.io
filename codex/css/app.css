@@ -1,3 +1,8 @@
+@font-face {
+  font-family: 'everson';
+  src: url('../fonts/EversonMono.ttf');
+}
+
 body {
 	background: #000;
 }
@@ -33,6 +38,11 @@ hr {
 
 a {
 	outline: none;
+}
+
+.everson {
+	font-family: 'everson';
+	font-size: 2rem;
 }
 
 .content {
