@@ -31,6 +31,10 @@ hr {
 	border-top: 1px solid #fff;
 }
 
+a {
+	outline: none;
+}
+
 .content {
 	font-size: 1.2rem;
 	font-family: 'Comfortaa', cursive;
