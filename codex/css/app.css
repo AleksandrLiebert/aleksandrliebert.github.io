@@ -1,36 +1,38 @@
+:root {
+  --text: rgb(189, 189, 189);
+  --fon: rgb(11, 11, 11);
+}
+
 @font-face {
   font-family: 'everson';
   src: url('../fonts/EversonMono.ttf');
 }
 
 body {
-	background: #000;
+	background-color: var(--fon);
   font-family: 'Marmelad', sans-serif;
-  color: var(--white);
+  color: var(--text);
   font-size: 1.2rem;
 }
 
 h1 {
 	text-align: center;
 	font-family: 'Literata', serif;
-	color: var(--white);
 }
 
 h2 {
 	text-align: center;
 	font-family: 'Literata', serif;
-	color: var(--white);
 }
 
 h3 {
 	text-align: center;
 	font-family: 'Literata', serif;
-	color: var(--white);
 }
 
 hr {
 	width: 15rem;
-	border-top: 1px solid #fff;
+	border-top: 1px solid var(--text);
 }
 
 a {
@@ -45,15 +47,15 @@ a {
 .content {
 	font-size: 1.2rem;
 	font-family: 'Comfortaa', cursive;
-	color: var(--white);
+	color: var(--text);
 }
 
 .content:hover {
-	color: var(--white);
+	color: var(--text);
 }
 
 .cross {
-	color: var(--white);
+	color: var(--text);
 	text-decoration: underline;
 }
 
@@ -62,7 +64,7 @@ a {
 }
 
 .link {
-	color: var(--white);
+	color: var(--text);
 	text-decoration: underline;
 }
 
