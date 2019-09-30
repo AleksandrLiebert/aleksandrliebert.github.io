@@ -1,4 +1,9 @@
 {
+  "main":
+  {
+    "name": "Docendo Deus",
+    "content": "<p class="text-center">Философский трактат о гибкой и устойчивой картине мира.</p>"
+  }
   "categories":
   [
     {
