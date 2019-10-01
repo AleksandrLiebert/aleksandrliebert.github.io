@@ -62,12 +62,12 @@
 
       if (c == null) {
         setMain()
-        $('#category').delay(400).fadeIn(400)
+        $('#category').delay(600).fadeIn(400)
       } else if (c == 'content') {
-        $('#contents').delay(400).fadeIn(400)
+        $('#contents').delay(600).fadeIn(400)
       } else {
-        setTimeout(() => setCategory(c), 400)
-        $('#category').delay(400).fadeIn(400)
+        setTimeout(() => setCategory(c), 500)
+        $('#category').delay(600).fadeIn(400)
         //setTimeout(resizeWindow, 500)
       }
     }
