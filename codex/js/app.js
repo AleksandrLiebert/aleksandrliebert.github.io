@@ -27,6 +27,7 @@
         showCategory(id)
         return false
       })
+      $('#category').fadeIn(400)
       resizeWindow()
     })
   }
@@ -53,8 +54,6 @@
         $('#contents').fadeIn(400)
       } else {
         setCategory(c)
-        $('#category').fadeIn(400)
-        //setTimeout(resizeWindow, 500)
       }
     } else {
       $('#category').fadeOut(400)
@@ -62,13 +61,11 @@
 
       if (c == null) {
         setMain()
-        $('#category').delay(600).fadeIn(400)
+        $('#category').delay(400).fadeIn(400)
       } else if (c == 'content') {
-        $('#contents').delay(600).fadeIn(400)
+        $('#contents').delay(400).fadeIn(400)
       } else {
-        setTimeout(() => setCategory(c), 500)
-        $('#category').delay(600).fadeIn(400)
-        //setTimeout(resizeWindow, 500)
+        setTimeout(() => setCategory(c), 400)
       }
     }
   }
