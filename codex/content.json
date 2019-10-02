@@ -1,138 +1,110 @@
 {
-  "main":
-  {
+  "main": {
     "name": "Docendo Deus",
-    "content": "<p class=\"text-center\">Философский трактат о гибкой и устойчивой картине мира.</p>"
+    "links": ["methodology", "happiness", "force", "ai"]
   },
-  "categories":
-  [
-    {
-      "id": "true",
-      "name": "Абсолютная истина"
-    },
-    {
-      "id": "truth",
-      "name": "Истина"
-    },
-    {
-      "id": "responsibility",
-      "name": "Ответственность"
-    },
-    {
-      "id": "life",
-      "name": "Жизнь"
-    },
-    {
-      "id": "dichotomy",
-      "name": "Дихотомия"
-    },
-    {
-      "id": "force",
-      "name": "Сила"
-    },
-    {
-      "id": "happiness",
-      "name": "Счастье"
-    },
-    {
-      "id": "harmony",
-      "name": "Гармония"
-    },
-    {
-      "id": "know",
-      "name": "Осознание"
-    },
-    {
-      "id": "surrogate",
-      "name": "Суррогаты и Подлинное"
-    },
-    {
-      "id": "conflict",
-      "name": "Конфликт"
-    },
-    {
-      "id": "will",
-      "name": "Воля"
-    },
-    {
-      "id": "strategies",
-      "name": "Стратегии"
-    },
-    {
-      "id": "love",
-      "name": "Любовь"
-    },
-    {
-      "id": "attention",
-      "name": "Внимание"
-    },
-    {
-      "id": "interest",
-      "name": "Интерес"
-    },
-    {
-      "id": "respect",
-      "name": "Уважение"
-    },
-    {
-      "id": "trust",
-      "name": "Доверие"
-    },
-    {
-      "id": "understanding",
-      "name": "Понимание"
-    },
-    {
-      "id": "flirt",
-      "name": "Флирт"
-    },
-    {
-      "id": "exercise",
-      "name": "Самореализация"
-    },
-    {
-      "id": "adventure",
-      "name": "Приключение"
-    },
-    {
-      "id": "faith",
-      "name": "Вера"
-    },
-    {
-      "id": "ai",
-      "name": "Искусственный интеллект"
-    },
-    {
-      "id": "person",
-      "name": "Личность"
-    },
-    {
-      "id": "evolution",
-      "name": "Развитие"
-    },
-    {
-      "id": "good",
-      "name": "Добро"
-    },
-    {
-      "id": "definition",
-      "name": "Определение и Определённость"
-    },
-    {
-      "id": "manipulation",
-      "name": "Манипуляция"
-    },
-    {
-      "id": "war",
-      "name": "Война"
-    },
-    {
-      "id": "morality",
-      "name": "Мораль"
-    },
-    {
-      "id": "abc",
-      "name": "Алфавит"
-    }
-  ]
+  "methodology": {
+    "name": "Методология",
+    "links": ["true", "truth", "life", "respect", "dichotomy", "evolution"]
+  },
+  "true": {
+    "name": "Абсолютная истина"
+  },
+  "truth": {
+    "name": "Истина"
+  },
+  "responsibility": {
+    "name": "Ответственность"
+  },
+  "life": {
+    "name": "Жизнь"
+  },
+  "dichotomy": {
+    "name": "Дихотомия"
+  },
+  "force": {
+    "name": "Сила"
+  },
+  "happiness": {
+    "name": "Счастье",
+    "links": ["harmony", "love", "exercise", "adventure", "faith"]
+  },
+  "harmony": {
+    "name": "Гармония",
+    "links": ["know", "surrogate", "conflict"]
+  },
+  "know": {
+    "name": "Осознание"
+  },
+  "surrogate": {
+    "name": "Суррогаты и Подлинное"
+  },
+  "conflict": {
+    "name": "Конфликт"
+  },
+  "will": {
+    "name": "Воля"
+  },
+  "strategies": {
+    "name": "Стратегии"
+  },
+  "love": {
+    "name": "Любовь",
+    "links": ["attention", "interest", "respect", "trust", "understanding", "flirt"]
+  },
+  "attention": {
+    "name": "Внимание"
+  },
+  "interest": {
+    "name": "Интерес"
+  },
+  "respect": {
+    "name": "Уважение"
+  },
+  "trust": {
+    "name": "Доверие"
+  },
+  "understanding": {
+    "name": "Понимание"
+  },
+  "flirt": {
+    "name": "Флирт"
+  },
+  "exercise": {
+    "name": "Самореализация",
+    "links": ["interest", "morality"]
+  },
+  "adventure": {
+    "name": "Приключение"
+  },
+  "faith": {
+    "name": "Вера"
+  },
+  "ai": {
+    "name": "Искусственный интеллект"
+  },
+  "person": {
+    "name": "Личность"
+  },
+  "evolution": {
+    "name": "Развитие"
+  },
+  "good": {
+    "name": "Добро"
+  },
+  "definition": {
+    "name": "Определение и Определённость"
+  },
+  "manipulation": {
+    "name": "Манипуляция"
+  },
+  "war": {
+    "name": "Война"
+  },
+  "morality": {
+    "name": "Мораль"
+  },
+  "abc": {
+    "name": "Алфавит"
+  }
 }
