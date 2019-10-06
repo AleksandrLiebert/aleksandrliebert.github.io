@@ -140,4 +140,22 @@ function resizeWindow() {
   }
 }
 
+$('#level-wiser').click(function() {
+  $('#level-neofit').removeClass('level-active')
+  $('#level-wiser').addClass('level-active')
+  $('#content').animate({
+    opacity: 0,
+    left: '-100px',
+  }, 500, function () {
+    $('#content').hide()
+    wiser.style.display = 'block'
+    $('#wiser').animate({
+      opacity: 1,
+      left: '0px'
+    }, 500, function() {
+
+    })
+  })
+})
+
 $(window).resize(resizeWindow)

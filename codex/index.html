@@ -18,12 +18,15 @@
 				<h1 id="title"></h1>
         <div class="container">
           <div class="row">
-            <div class="col-4 level level-active">Неофит</div>
-            <div class="col-4 level">Мудрец</div>
+            <div id="level-neofit" class="col-4 level level-active">Неофит</div>
+            <div id="level-wiser" class="col-4 level">Мудрец</div>
             <div class="col-4 level">Сигил</div>
           </div>
         </div>
-        <div id="content"></div>
+        <div id="content" style="position: relative;"></div>
+        <div id="wiser" style="display: none; position: relative; opacity: 0; left: 100px;">Тестовый текст</div>
+        <div id="sigil-info" style="display: none;"></div>
+        <div id="sigil-ref"  style="display: none;"></div>
   			<div id="back" class="col-md-8 offset-md-2 text-center">
           <hr>
           <a class="content" href="?c=content">Содержание</a>
