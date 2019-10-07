@@ -143,12 +143,14 @@ function resizeWindow() {
 $('#level-wiser').click(function() {
   $('#level-neofit').removeClass('level-active')
   $('#level-wiser').addClass('level-active')
+  contentSize = $('#content')[0].offsetWidth
   $('#content').animate({
     opacity: 0,
-    left: '-100px',
+    left: '-' + contentSize,
   }, 500, function () {
     $('#content').hide()
     wiser.style.display = 'block'
+    wiser.style.left = contentSize
     $('#wiser').animate({
       opacity: 1,
       left: '0px'
