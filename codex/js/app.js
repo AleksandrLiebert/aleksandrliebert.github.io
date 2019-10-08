@@ -2,7 +2,58 @@
    console.log(data)
  }
 
+ function selectLevel(level) {
+   var currentLevel = $('.level-active')[0].id.substr(6)
+   if (level == currentLevel){
+     return
+   }
+
+   if (animationRun == true) {
+     return
+   }
+
+   animationRun = true
+
+   $('#level-' + currentLevel).removeClass('level-active')
+   $('#level-' + level).addClass('level-active')
+
+   contentSize = $('#' + currentLevel + '-content')[0].offsetWidth
+
+   if (level == 'neofit') {
+     firstShift = contentSize
+     secondShift = '-' + contentSize
+   } else if (level == 'sgl') {
+     firstShift = '-' + contentSize
+     secondShift = contentSize
+   } else if (currentLevel == 'neofit') {
+     firstShift = '-' + contentSize
+     secondShift = contentSize
+   } else {
+     firstShift = contentSize
+     secondShift = '-' + contentSize
+   }
+
+   currentBlock = '#' + currentLevel + '-content'
+   nextBlock = '#' + level + '-content'
+
+   $(currentBlock).animate({
+     opacity: 0,
+     left: firstShift,
+   }, 500, function () {
+     $(currentBlock).hide()
+     $(nextBlock)[0].style.display = 'block'
+     $(nextBlock)[0].style.left = secondShift
+     $(nextBlock).animate({
+       opacity: 1,
+       left: '0px'
+     }, 500, function() {
+       animationRun = false
+     })
+   })
+ }
+
 function setCategory(id){
+  selectLevel('neofit')
   var category = content[id]
 
   $.get('content/' + id + '.html', function(data) {
@@ -145,55 +196,7 @@ function resizeWindow() {
   }
 }
 
-function selectLevel(level) {
-  var currentLevel = $('.level-active')[0].id.substr(6)
-  if (level == currentLevel){
-    return
-  }
 
-  if (animationRun == true) {
-    return
-  }
-
-  animationRun = true
-
-  $('#level-' + currentLevel).removeClass('level-active')
-  $('#level-' + level).addClass('level-active')
-
-  contentSize = $('#' + currentLevel + '-content')[0].offsetWidth
-
-  if (level == 'neofit') {
-    firstShift = contentSize
-    secondShift = '-' + contentSize
-  } else if (level == 'sgl') {
-    firstShift = '-' + contentSize
-    secondShift = contentSize
-  } else if (currentLevel == 'neofit') {
-    firstShift = '-' + contentSize
-    secondShift = contentSize
-  } else {
-    firstShift = contentSize
-    secondShift = '-' + contentSize
-  }
-
-  currentBlock = '#' + currentLevel + '-content'
-  nextBlock = '#' + level + '-content'
-
-  $(currentBlock).animate({
-    opacity: 0,
-    left: firstShift,
-  }, 500, function () {
-    $(currentBlock).hide()
-    $(nextBlock)[0].style.display = 'block'
-    $(nextBlock)[0].style.left = secondShift
-    $(nextBlock).animate({
-      opacity: 1,
-      left: '0px'
-    }, 500, function() {
-      animationRun = false
-    })
-  })
-}
 
 $('#level-neofit').click(function() {
   selectLevel('neofit')
