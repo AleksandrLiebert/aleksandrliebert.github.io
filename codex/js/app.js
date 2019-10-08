@@ -6,17 +6,9 @@ function setCategory(id){
   var category = content[id]
 
   $.get('content/' + id + '.html', function(data) {
-    $('#sigil').unbind('click')
-    if (content[id].links == null) {
-      $('#sigil').html('<img src="img/' + id + '.png" width="100%">')
-    } else {
-      $('#sigil').html('<img src="img/' + id + '.png" width="100%" style="cursor: pointer;">')
-      $('#sigil').click(function(){
-        showContent(id)
-      })
-    }
+    $('#sigil').html('<img src="img/' + id + '.png" width="100%">')
     $('#title').text(category.name)
-    $('#content').html(data)
+    $('#neofit-content').html(data)
 
     $('.cross').click(function() {
       var id = this.getAttribute('data')
@@ -26,30 +18,49 @@ function setCategory(id){
     $('#category').fadeIn(400)
    resizeWindow()
  })
+
+ $.get('wiser/' + id + '.html', function(data) {
+   $('#wiser-content').html(data)
+ }).fail(function() {
+   $('#wiser-content').text('Контент в разработке')
+ })
+
+ $.get('sigil/' + id + '.html', function(data) {
+   $('#sigil-info').html(data)
+ }).fail(function() {
+   $('#sigil-info').text('Контент в разработке')
+ })
+
+ if (content[id].links != null) {
+   var res = '<div class="row">'
+   for(var i in content[id].links) {
+     var link = content[id].links[i]
+     res += '<div class="col-xl-3 col-6">'
+     res += '<a class="c-img sgl-ref-link" data="' + link + '" href="?c=' + link + '"><img src="img/' + link  + '.png" width="100%" style="cursor: pointer;"></a>'
+     res += '<p class="text-center">' + content[link].name + '</p>'
+     res += '</div>'
+   }
+   res += '</div>'
+   $('#sigil-ref').html(res)
+   $('.sgl-ref-link').click(function() {
+     var id = this.getAttribute('data')
+     showCategory(id)
+     return false
+   })
+ } else {
+   $('#sigil-ref').html('')
+ }
 }
 
-function setContent(id) {
-  if (id == null) {
-    var res = '<div class="row">'
-    for (var i in content) {
-      res += '<div class="col-md-3 col-6">'
-      res += '<a class="c-img" data="' + i + '" href="?c=' + i + '"><img src="img/' + i  + '.png" width="100%" style="cursor: pointer;"></a>'
-      res += '<p>' + content[i].name + '</p>'
-      res += '</div>'
-    }
-    res += '</div>'
-  } else {
-    var links = content[id].links
-    var res = '<div class="row">'
-    for(var i in links) {
-      var link = links[i]
-      res += '<div class="col-md-3 col-6">'
-      res += '<a class="c-img" data="' + link + '" href="?c=' + link + '"><img src="img/' + link  + '.png" width="100%" style="cursor: pointer;"></a>'
-      res += '<p>' + content[link].name + '</p>'
-      res += '</div>'
-    }
+function setContent() {
+  var res = '<div class="row">'
+  for (var i in content) {
+    res += '<div class="col-md-3 col-6">'
+    res += '<a class="c-img" data="' + i + '" href="?c=' + i + '"><img src="img/' + i  + '.png" width="100%" style="cursor: pointer;"></a>'
+    res += '<p>' + content[i].name + '</p>'
     res += '</div>'
   }
+  res += '</div>'
   $('#contents').html(res)
     $('.c-img').click(function() {
     var id = this.getAttribute('data')
@@ -64,24 +75,18 @@ function showCategory(id){
 }
 
 function showContent(id) {
-  if (id == null) {
-    history.pushState(null, null, '?content=true')
-  } else {
-    history.pushState(null, null, '?content=true&c=' + id)
-  }
+  history.pushState(null, null, '?c=content')
   reload()
 }
 
 function reload() {
-  print('reload')
   var url = new URL(window.location.href)
   var c = url.searchParams.get("c");
-  var subContent = url.searchParams.get("content");
   if (category.style.display == 'none' && contents.style.display == 'none') {
-    if (c == null && subContent == null) {
+    if (c == null) {
       setCategory('main')
-    } else if (subContent == 'true') {
-      setContent(c)
+    } else if (c == 'content') {
+      setContent()
       $('#contents').fadeIn(400)
     } else {
       setCategory(c)
@@ -89,11 +94,11 @@ function reload() {
   } else {
     $('#category').fadeOut(400)
     $('#contents').fadeOut(400)
-    if (c == null && subContent == null) {
+    if (c == null) {
       setTimeout(() => setCategory('main'), 400)
       $('#category').delay(400).fadeIn(400)
-    } else if (subContent == 'true') {
-      setContent(c)
+    } else if (c == 'content') {
+      setContent()
       $('#contents').delay(400).fadeIn(400)
     } else {
       setTimeout(() => setCategory(c), 400)
@@ -140,24 +145,68 @@ function resizeWindow() {
   }
 }
 
-$('#level-wiser').click(function() {
-  $('#level-neofit').removeClass('level-active')
-  $('#level-wiser').addClass('level-active')
-  contentSize = $('#content')[0].offsetWidth
-  $('#content').animate({
+function selectLevel(level) {
+  var currentLevel = $('.level-active')[0].id.substr(6)
+  if (level == currentLevel){
+    return
+  }
+
+  if (animationRun == true) {
+    return
+  }
+
+  animationRun = true
+
+  $('#level-' + currentLevel).removeClass('level-active')
+  $('#level-' + level).addClass('level-active')
+
+  contentSize = $('#' + currentLevel + '-content')[0].offsetWidth
+
+  if (level == 'neofit') {
+    firstShift = contentSize
+    secondShift = '-' + contentSize
+  } else if (level == 'sgl') {
+    firstShift = '-' + contentSize
+    secondShift = contentSize
+  } else if (currentLevel == 'neofit') {
+    firstShift = '-' + contentSize
+    secondShift = contentSize
+  } else {
+    firstShift = contentSize
+    secondShift = '-' + contentSize
+  }
+
+  currentBlock = '#' + currentLevel + '-content'
+  nextBlock = '#' + level + '-content'
+
+  $(currentBlock).animate({
     opacity: 0,
-    left: '-' + contentSize,
+    left: firstShift,
   }, 500, function () {
-    $('#content').hide()
-    wiser.style.display = 'block'
-    wiser.style.left = contentSize
-    $('#wiser').animate({
+    $(currentBlock).hide()
+    $(nextBlock)[0].style.display = 'block'
+    $(nextBlock)[0].style.left = secondShift
+    $(nextBlock).animate({
       opacity: 1,
       left: '0px'
     }, 500, function() {
-
+      animationRun = false
     })
   })
+}
+
+$('#level-neofit').click(function() {
+  selectLevel('neofit')
 })
+
+$('#level-wiser').click(function() {
+  selectLevel('wiser')
+})
+
+$('#level-sgl').click(function() {
+  selectLevel('sgl')
+})
+
+animationRun = false
 
 $(window).resize(resizeWindow)

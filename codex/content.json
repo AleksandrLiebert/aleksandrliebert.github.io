@@ -1,10 +1,10 @@
 {
   "main": {
     "name": "Docendo Deus",
-    "links": ["methodology", "happiness", "force", "ai"]
+    "links": ["principle", "happiness", "force", "ai"]
   },
-  "methodology": {
-    "name": "Методология",
+  "principle": {
+    "name": "Принципы",
     "links": ["true", "truth", "life", "responsibility", "dichotomy", "evolution"]
   },
   "true": {
