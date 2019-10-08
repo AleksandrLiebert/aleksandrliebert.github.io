@@ -3,11 +3,6 @@
   --fon: rgb(11, 11, 11);
 }
 
-@font-face {
-  font-family: 'everson';
-  src: url('../fonts/EversonMono.ttf');
-}
-
 body {
 	background-color: var(--fon);
   font-family: 'Marmelad', sans-serif;
@@ -17,17 +12,17 @@ body {
 
 h1 {
 	text-align: center;
-	font-family: 'Literata', serif;
+  font-family: 'Marmelad', sans-serif;
 }
 
 h2 {
 	text-align: center;
-	font-family: 'Literata', serif;
+  font-family: 'Marmelad', sans-serif;
 }
 
 h3 {
 	text-align: center;
-	font-family: 'Literata', serif;
+  font-family: 'Marmelad', sans-serif;
 }
 
 hr {
@@ -39,14 +34,9 @@ a {
 	outline: none;
 }
 
-.everson {
-	font-family: 'everson';
-	font-size: 2rem;
-}
-
 .content {
 	font-size: 1.2rem;
-	font-family: 'Comfortaa', cursive;
+  font-family: 'Marmelad', sans-serif;
 	color: var(--text);
   padding-bottom: 1rem;
 }
@@ -75,7 +65,7 @@ a {
 
 .level {
 	font-size: 1.2rem;
-	font-family: 'Comfortaa', cursive;
+  font-family: 'Marmelad', sans-serif;
 	color: var(--text);
   text-align: center;
   cursor: pointer;
