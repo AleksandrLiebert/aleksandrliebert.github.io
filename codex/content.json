@@ -23,7 +23,8 @@
     "name": "Дихотомия"
   },
   "force": {
-    "name": "Сила"
+    "name": "Сила",
+    "links": ["experience", "theory", "feeling", "relations", "healt", "power", "time", "possibility"]
   },
   "happiness": {
     "name": "Счастье",
@@ -103,5 +104,29 @@
   },
   "morality": {
     "name": "Мораль"
+  },
+  "experience": {
+    "name": "Опыт"
+  },
+  "theory": {
+    "name": "Теория"
+  },
+  "feeling": {
+    "name": "Чувства"
+  },
+  "relations": {
+    "name": "Отношения"
+  },
+  "healt": {
+    "name": "Здоровье"
+  },
+  "power": {
+    "name": "Власть"
+  },
+  "time": {
+    "name": "Время"
+  },
+  "possibility": {
+    "name": "Возможности"
   }
 }
