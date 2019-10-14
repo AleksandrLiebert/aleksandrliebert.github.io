@@ -5,7 +5,7 @@
   },
   "principle": {
     "name": "Принципы",
-    "links": ["true", "truth", "life", "responsibility", "dichotomy", "evolution", "definition"]
+    "links": ["true", "truth", "life", "responsibility", "dichotomy", "evolution", "definition", "synergy"]
   },
   "true": {
     "name": "Абсолютная истина"
@@ -132,5 +132,8 @@
   },
   "ritual": {
     "name": "Ритуалы"
+  },
+  "synergy": {
+    "name": "Синергия"
   }
 }
