@@ -1,0 +1,180 @@
+{
+  "main": {
+    "name": "Docendo Deus",
+    "links": ["principle", "happiness", "resource", "ai"]
+  },
+  "principle": {
+    "name": "Принципы",
+    "links": ["true", "be", "life"]
+  },
+  "true": {
+    "name": "Истина",
+    "links": ["truth", "choice", "model"]
+  },
+  "truth": {
+    "name": "Правда"
+  },
+  "model": {
+    "name": "Модель"
+  },
+  "be": {
+    "name": "Бытие",
+    "links": ["definition", "dichotomy", "evolution"]
+  },
+  "choice": {
+    "name": "Выбор"
+  },
+  "life": {
+    "name": "Жизнь",
+    "links": ["will", "conflict", "synergy"]
+  },
+  "dichotomy": {
+    "name": "Дихотомия"
+  },
+  "resource": {
+    "name": "Ресурс",
+    "links": ["healt", "power", "time", "possibility", "theory", "experience", "feeling", "relations"]
+  },
+  "happiness": {
+    "name": "Счастье",
+    "links": ["harmony", "love", "exercise", "adventure", "faith"]
+  },
+  "harmony": {
+    "name": "Гармония",
+    "links": ["meditation", "composure", "know", "genuine"]
+  },
+  "meditation": {
+    "name": "Медитация"
+  },
+  "know": {
+    "name": "Рефлексия"
+  },
+  "composure": {
+    "name": "Самообладание"
+  },
+  "genuine": {
+    "name": "Подлинное"
+  },
+  "conflict": {
+    "name": "Конфликт"
+  },
+  "will": {
+    "name": "Воля"
+  },
+  "strategies": {
+    "name": "Сила воли"
+  },
+  "love": {
+    "name": "Любовь",
+    "links": ["attention", "interest", "respect", "trust", "understanding", "flirt"]
+  },
+  "attention": {
+    "name": "Внимание"
+  },
+  "interest": {
+    "name": "Интерес"
+  },
+  "respect": {
+    "name": "Уважение"
+  },
+  "trust": {
+    "name": "Доверие"
+  },
+  "understanding": {
+    "name": "Понимание"
+  },
+  "flirt": {
+    "name": "Флирт"
+  },
+  "exercise": {
+    "name": "Самореализация"
+  },
+  "adventure": {
+    "name": "Приключение",
+    "links": ["game", "foul", "seduction", "risk", "confrontation"]
+  },
+  "game": {
+    "name": "Игра"
+  },
+  "foul": {
+    "name": "Нарушение правил"
+  },
+  "seduction": {
+    "name": "Соблазнение"
+  },
+  "risk": {
+    "name": "Риск"
+  },
+  "confrontation": {
+    "name": "Противостояние"
+  },
+  "faith": {
+    "name": "Вера",
+    "links": ["good", "morality", "abc", "ritual", "highest-plan"]
+  },
+  "abc": {
+    "name": "Символика"
+  },
+  "highest-plan": {
+    "name": "Высший замысел"
+  },
+  "ai": {
+    "name": "Искусственный интеллект"
+  },
+  "person": {
+    "name": "Личность"
+  },
+  "evolution": {
+    "name": "Развитие"
+  },
+  "good": {
+    "name": "Добро"
+  },
+  "definition": {
+    "name": "Определение"
+  },
+  "manipulation": {
+    "name": "Манипуляция"
+  },
+  "war": {
+    "name": "Война"
+  },
+  "morality": {
+    "name": "Мораль"
+  },
+  "experience": {
+    "name": "Опыт"
+  },
+  "theory": {
+    "name": "Теория"
+  },
+  "feeling": {
+    "name": "Чувства"
+  },
+  "relations": {
+    "name": "Отношения",
+    "links": ["war"]
+  },
+  "healt": {
+    "name": "Здоровье"
+  },
+  "power": {
+    "name": "Власть",
+    "links": ["strategies", "sexuality"]
+  },
+  "sexuality": {
+    "name": "Сексуальность"  
+  },
+  "time": {
+    "name": "Время"
+  },
+  "possibility": {
+    "name": "Возможности"
+  },
+  "ritual": {
+    "name": "Ритуалы"
+  },
+  "synergy": {
+    "name": "Синергия"
+  }
+}

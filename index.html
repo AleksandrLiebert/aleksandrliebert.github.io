@@ -2,37 +2,63 @@
 <head>
   <meta charset="utf-8">
   <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
-  <title>Список проектов</title>
-  <link rel="shortcut icon" href="codex/img/dd-icon.png" type="image/png">
-  <link href="https://fonts.googleapis.com/css?family=Open+Sans+Condensed:300&display=swap" rel="stylesheet">
+  <meta name="keywords" content="саморазвите, мировоззрение, самосовершенствование, здоровье, лайфхак, биохак, нейрохак, деньги, счастье, смысл жизни, истина">
+  <meta http-equiv="content-language" content="ru">
+
+  <title>Docendo Deus</title>
+  <link rel="shortcut icon" href="img/dd-icon.png" type="image/png">
+  <!--<link href="https://fonts.googleapis.com/css?family=Marmelad&display=swap" rel="stylesheet">-->
+  <link href="https://fonts.googleapis.com/css?family=Neucha&display=swap" rel="stylesheet">
   <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css" integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
-  <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js" integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl" crossorigin="anonymous"></script>
-  <style>
-    h1 {
-      font-family: 'Open Sans Condensed', sans-serif;
-    }
-  </style>
+  <link rel="stylesheet" href="css/app.css">
 </head>
 <body>
-  <div class="jumbotron text-center">
-    <h1>Список проектов</h1>
-    <p>Данные проекты созданы, либо развиваются <a href="https://vk.com/alex_liebert" target="_blank">Александром Либертом</a>.</p>
-  </div>
-  <div class="container">
-    <div class="row">
-      <div class="col-lg-4 col-md-6">
-        <div class="card" style="width: 100%;">
-          <img class="card-img-top" src="cards/01.png" alt="Фото проекта">
-          <div class="card-body">
-            <h5 class="card-title">Connect</h5>
-            <p class="card-text">Логическая головоломка в которой нужно подключить к интернету все компьютеры.</p>
-            <a href="/connect/" target="_blank" class="btn btn-primary">Открыть</a>
+	<div id="category" class="container" style="display: none;">
+		<div class="row">
+			<div id="sigil" class="offset-3 col-6 col-md-4 offset-md-4"></div>
+			<div class="col-md-8 offset-md-2 text-justify">
+
+				<h1 id="title"></h1>
+        <div class="container d-none">
+          <div class="row">
+            <div id="level-neofit" class="col-4 level level-active">Неофит</div>
+            <div id="level-wiser" class="col-4 level">Мудрец</div>
+            <div id="level-sgl" class="col-4 level">Сигил</div>
           </div>
         </div>
-      </div>
-    </div>
+        <div id="neofit-content" style="position: relative;"></div>
+        <div id="wiser-content" style="display: none; position: relative; opacity: 0;"></div>
+        <div id="sgl-content" style="display: none; position: relative; opacity: 0;">
+          <div id="sigil-info"></div>
+          <div id="sigil-ref" class="container"></div>
+        </div>
+  			<div id="back" class="col-md-8 offset-md-2 text-center">
+          <hr>
+          <a class="content" href="?c=content">Содержание</a>
+  			</div>
+			</div>
+		</div>
+	</div>
+  <div id="contents" class="container text-center" style="display: none;">
   </div>
-  <script src="https://code.jquery.com/jquery-3.2.1.slim.min.js" integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN" crossorigin="anonymous"></script>
-  <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js" integrity="sha384-ApNbgh9B+Y1QKtv3Rn7W3mgPxhU9K/ScQsAP7hUibX39j7fakFPskvXusvfa0b4Q" crossorigin="anonymous"></script>
+  <div style="display: none; width: 100%; position: fixed; bottom: 0; background-color: rgb(33, 33, 33); padding-top: 0.5rem; padding-bottom: 0.5rem;"><div class="row"><div class="col-12 text-center">Следующие заседание 26.10 15:30 в НГТУ корпус VI кабинет 411</div></div></div>
+	<script src="https://code.jquery.com/jquery-3.2.1.min.js"></script>
+	<script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js" integrity="sha384-ApNbgh9B+Y1QKtv3Rn7W3mgPxhU9K/ScQsAP7hUibX39j7fakFPskvXusvfa0b4Q" crossorigin="anonymous"></script>
+  <script src="https://unpkg.com/showdown@1.9.1/dist/showdown.min.js"></script>
+  <script src="js/app.js"></script>
+  <!-- Yandex.Metrika counter -->
+<script type="text/javascript" >
+   (function(m,e,t,r,i,k,a){m[i]=m[i]||function(){(m[i].a=m[i].a||[]).push(arguments)};
+   m[i].l=1*new Date();k=e.createElement(t),a=e.getElementsByTagName(t)[0],k.async=1,k.src=r,a.parentNode.insertBefore(k,a)})
+   (window, document, "script", "https://mc.yandex.ru/metrika/tag.js", "ym");
+
+   ym(55872295, "init", {
+        clickmap:true,
+        trackLinks:true,
+        accurateTrackBounce:true
+   });
+</script>
+<noscript><div><img src="https://mc.yandex.ru/watch/55872295" style="position:absolute; left:-9999px;" alt="" /></div></noscript>
+<!-- /Yandex.Metrika counter -->
 </body>
 </html>
