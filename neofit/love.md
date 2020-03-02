@@ -1,0 +1,3 @@
+Любовь — это проявление <a class="cross" data="synergy" href="?c=synergy">синергии</a> между людьми.
+
+Механизм работы любви следующий. Первый этап это её зарождение через привлечение <a class="cross" href="attention.html">внимания</a>. Второй это её рост через: <a class="cross" data="interest" href="?c=interest">интерес</a>, <a class="cross" data="respect" href="?c=respect">уважение</a>, <a class="cross" data="understanding" href="?c=understanding">понимание</a>, <a class="cross" data="trust" href="?c=trust">доверие</a>. Дополнительным качеством усиливающим эффект может быть: <a class="cross" data="flirt" href="?c=flirt">флирт</a>.
