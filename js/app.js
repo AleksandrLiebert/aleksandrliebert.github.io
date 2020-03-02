@@ -57,7 +57,7 @@ function setCategory(id){
   var category = content[id]
 
   $.ajax({
-    url: 'neofit/' + id + '.md',
+    url: 'content/' + id + '.md',
     type: 'get',
     error: function(XMLHttpRequest, textStatus, errorThrown){
       $('#sigil').html('<img src="img/' + id + '.png" width="100%">')
