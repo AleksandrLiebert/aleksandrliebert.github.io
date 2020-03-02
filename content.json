@@ -156,7 +156,7 @@
   },
   "power": {
     "name": "Власть",
-    "links": ["strategies", "sexuality"]
+    "links": ["strategies", "sexuality", "money"]
   },
   "sexuality": {
     "name": "Сексуальность"
@@ -172,5 +172,8 @@
   },
   "synergy": {
     "name": "Синергия"
+  },
+  "money": {
+    "name": "Деньги"
   }
 }
