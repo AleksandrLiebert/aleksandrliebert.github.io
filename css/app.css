@@ -31,6 +31,8 @@ hr {
 }
 
 a {
+	color: var(--text);
+	text-decoration: underline;
 	outline: none;
 }
 
@@ -41,9 +43,9 @@ blockquote {
 
 .content {
 	font-size: 1.2rem;
-  font-family: 'Neucha', sans-serif;
+	font-family: 'Neucha', sans-serif;
 	color: var(--text);
-  padding-bottom: 6rem;
+	padding-bottom: 6rem;
 }
 
 .content:hover {
