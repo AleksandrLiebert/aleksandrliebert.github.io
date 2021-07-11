@@ -37,7 +37,7 @@
   },
   "happiness": {
     "name": "Счастье",
-    "links": ["harmony", "love", "exercise", "adventure", "faith"]
+    "links": ["harmony", "friendship", "exercise", "adventure", "faith"]
   },
   "harmony": {
     "name": "Гармония",
@@ -64,9 +64,8 @@
   "strategies": {
     "name": "Сила воли"
   },
-  "love": {
-    "name": "Любовь",
-    "links": ["attention", "interest", "respect", "trust", "understanding", "flirt"]
+  "friendship": {
+    "name": "Дружба"
   },
   "attention": {
     "name": "Внимание"
