@@ -33,7 +33,7 @@
   },
   "resource": {
     "name": "Ресурс",
-    "links": ["healt", "power", "time", "possibility", "theory", "experience", "feeling", "relations"]
+    "links": ["power", "healt", "possibility", "time", "experience", "theory", "relations", "feeling"]
   },
   "happiness": {
     "name": "Счастье",
