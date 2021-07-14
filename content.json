@@ -40,20 +40,7 @@
     "links": ["harmony", "friendship", "exercise", "adventure", "faith"]
   },
   "harmony": {
-    "name": "Гармония",
-    "links": ["meditation", "composure", "know", "genuine"]
-  },
-  "meditation": {
-    "name": "Медитация"
-  },
-  "know": {
-    "name": "Рефлексия"
-  },
-  "composure": {
-    "name": "Самообладание"
-  },
-  "genuine": {
-    "name": "Подлинное"
+    "name": "Гармония"
   },
   "conflict": {
     "name": "Конфликт"
