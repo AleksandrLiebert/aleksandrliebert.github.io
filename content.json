@@ -1,7 +1,7 @@
 {
   "main": {
     "name": "Docendo Deus",
-    "links": ["principle", "happiness", "resource", "ai"]
+    "links": ["principle", "happiness", "resource"]
   },
   "principle": {
     "name": "Принципы",
@@ -109,7 +109,7 @@
   },
   "faith": {
     "name": "Вера",
-    "links": ["good", "morality", "abc", "ritual", "highest-plan"]
+    "links": ["good", "morality", "abc", "ritual", "highest-plan", "ai"]
   },
   "abc": {
     "name": "Символика"
