@@ -54,75 +54,20 @@
   "friendship": {
     "name": "Дружба"
   },
-  "attention": {
-    "name": "Внимание"
-  },
-  "interest": {
-    "name": "Интерес"
-  },
-  "respect": {
-    "name": "Уважение"
-  },
-  "trust": {
-    "name": "Доверие"
-  },
-  "understanding": {
-    "name": "Понимание"
-  },
-  "flirt": {
-    "name": "Флирт"
-  },
   "exercise": {
     "name": "Самореализация"
   },
   "adventure": {
     "name": "Приключение"
   },
-  "game": {
-    "name": "Игра"
-  },
-  "foul": {
-    "name": "Нарушение правил"
-  },
-  "seduction": {
-    "name": "Соблазнение"
-  },
-  "risk": {
-    "name": "Риск"
-  },
-  "confrontation": {
-    "name": "Противостояние"
-  },
   "faith": {
-    "name": "Вера",
-    "links": ["good", "morality", "abc", "ritual", "highest-plan", "ai"]
-  },
-  "abc": {
-    "name": "Символика"
-  },
-  "highest-plan": {
-    "name": "Высший замысел"
-  },
-  "ai": {
-    "name": "ИИ"
-  },
-  "person": {
-    "name": "Личность"
+    "name": "Вера"
   },
   "evolution": {
     "name": "Развитие"
   },
-  "good": {
-    "name": "Добро"
-  },
   "definition": {
     "name": "Определение"
-  },
-  "manipulation": {
-    "name": "Манипуляция"
-  },
-  "morality": {
-    "name": "Мораль"
   },
   "experience": {
     "name": "Опыт"
@@ -151,9 +96,6 @@
   },
   "possibility": {
     "name": "Возможности"
-  },
-  "ritual": {
-    "name": "Ритуалы"
   },
   "synergy": {
     "name": "Синергия"
