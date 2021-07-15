@@ -76,8 +76,7 @@
     "name": "Самореализация"
   },
   "adventure": {
-    "name": "Приключение",
-    "links": ["game", "foul", "seduction", "risk", "confrontation"]
+    "name": "Приключение"
   },
   "game": {
     "name": "Игра"
