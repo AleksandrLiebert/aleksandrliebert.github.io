@@ -84,7 +84,7 @@ function setCategory(id){
       })
       $('#category').fadeIn(400)
       resizeWindow()
-      setTitle(id)
+      setTitle(category.name)
    }
   })
 
