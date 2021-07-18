@@ -1,8 +1,8 @@
- function print(data) {
-   console.log(data)
- }
+function setTitle(text) {
+  document.getElementsByTagName('TITLE')[0].innerHTML = text
+}
 
- function selectLevel(level) {
+  function selectLevel(level) {
    var currentLevel = $('.level-active')[0].id.substr(6)
    if (level == currentLevel){
      return
@@ -66,6 +66,7 @@ function setCategory(id){
        $('#neofit-content').text('Контент в разработке')
        $('#category').fadeIn(400)
        resizeWindow()
+       setTitle('Not Found')
     },
     success: function(data){
       $('#sigil').html('<img src="img/' + id + '.png" width="100%">')
@@ -83,6 +84,7 @@ function setCategory(id){
       })
       $('#category').fadeIn(400)
       resizeWindow()
+      setTitle(id)
    }
   })
 
