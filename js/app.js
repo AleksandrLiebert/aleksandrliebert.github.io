@@ -167,6 +167,7 @@ function setContent() {
     showCategory(id)
     return false
   })
+  setTitle('Содержание')
 }
 
 function showCategory(id){
