@@ -37,13 +37,16 @@
   },
   "happiness": {
     "name": "Счастье",
-    "links": ["harmony", "friendship", "safety", "exercise", "adventure", "faith"]
+    "links": ["harmony", "friendship", "safety", "exercise", "adventure", "beauty", "faith"]
   },
   "harmony": {
     "name": "Гармония"
   },
   "safety": {
     "name": "Безопасность"
+  },
+  "beauty" : {
+    "name": "Красота"
   },
   "conflict": {
     "name": "Конфликт"
