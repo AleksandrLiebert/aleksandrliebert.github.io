@@ -9,7 +9,7 @@
   },
   "true": {
     "name": "Истина",
-    "links": ["truth", "choice", "model"]
+    "links": ["truth", "model", "choice"]
   },
   "truth": {
     "name": "Правда"
