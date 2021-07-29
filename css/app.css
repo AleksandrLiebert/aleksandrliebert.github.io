@@ -41,6 +41,10 @@ blockquote {
     padding-left: 1rem;
 }
 
+p {
+  text-indent: 2rem;
+}
+
 .content {
 	font-size: 1.2rem;
 	font-family: 'Neucha', sans-serif;
