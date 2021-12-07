@@ -26,7 +26,7 @@
   },
   "life": {
     "name": "Жизнь",
-    "links": ["will", "conflict", "synergy"]
+    "links": ["will", "conflict"]
   },
   "dichotomy": {
     "name": "Дихотомия"
@@ -102,9 +102,6 @@
   },
   "possibility": {
     "name": "Возможности"
-  },
-  "synergy": {
-    "name": "Синергия"
   },
   "money": {
     "name": "Деньги"
