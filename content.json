@@ -36,7 +36,7 @@
   },
   "happiness": {
     "name": "Счастье",
-    "links": ["harmony", "friendship", "safety", "exercise", "adventure", "beauty", "faith"]
+    "links": ["harmony", "friendship", "safety", "way", "adventure", "beauty", "faith"]
   },
   "harmony": {
     "name": "Гармония"
@@ -56,8 +56,8 @@
   "friendship": {
     "name": "Дружба"
   },
-  "exercise": {
-    "name": "Самореализация"
+  "way": {
+    "name": "Путь"
   },
   "adventure": {
     "name": "Приключение"
