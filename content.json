@@ -11,6 +11,9 @@
     "name": "Истина",
     "links": ["absolute-truth"]
   },
+  "absolute-truth": {
+    "name": "Абсолютная истина"
+  }
   "life": {
     "name": "Жизнь"
   },
