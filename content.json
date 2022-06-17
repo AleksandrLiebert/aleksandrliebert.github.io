@@ -5,30 +5,14 @@
   },
   "principle": {
     "name": "Принципы",
-    "links": ["true", "be", "life", "conflict"]
-  },
-  "true": {
-    "name": "Истина",
-    "links": ["truth", "model", "choice"]
+    "links": ["truth", "life", "conflict"]
   },
   "truth": {
-    "name": "Правда"
-  },
-  "model": {
-    "name": "Модель"
-  },
-  "be": {
-    "name": "Бытие",
-    "links": ["definition", "dichotomy", "evolution"]
-  },
-  "choice": {
-    "name": "Выбор"
+    "name": "Истина",
+    "links": ["absolute-truth"]
   },
   "life": {
     "name": "Жизнь"
-  },
-  "dichotomy": {
-    "name": "Дихотомия"
   },
   "resource": {
     "name": "Ресурс",
