@@ -9,10 +9,13 @@
   },
   "truth": {
     "name": "Истина",
-    "links": ["absolute-truth"]
+    "links": ["absolute-truth", "relative-truth"]
   },
   "absolute-truth": {
     "name": "Абсолютная истина"
+  },
+  "relative-truth": {
+    "name": "Относительная истина"
   },
   "life": {
     "name": "Жизнь"
