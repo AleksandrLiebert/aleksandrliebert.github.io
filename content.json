@@ -5,7 +5,7 @@
   },
   "principle": {
     "name": "Принципы",
-    "links": ["truth", "life", "conflict"]
+    "links": ["truth", "life"]
   },
   "truth": {
     "name": "Истина",
@@ -47,7 +47,8 @@
     "name": "Путь"
   },
   "adventure": {
-    "name": "Приключение"
+    "name": "Приключение",
+    "links": ["conflict"]
   },
   "faith": {
     "name": "Вера"
