@@ -158,7 +158,7 @@ function addContent(c, shift, last) {
 }
 
 function setContent() {
-  var res = '<div class="row">'
+  var res = '<div style="height: 3rem;" class="row"></div><div class="row">'
   res += addContent('main', 0)
   res += '</div>'
   $('#contents').html(res)
