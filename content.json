@@ -5,7 +5,7 @@
   },
   "principle": {
     "name": "Принципы",
-    "links": ["truth", "life"]
+    "links": ["truth", "consciousness"]
   },
   "truth": {
     "name": "Истина",
@@ -20,8 +20,8 @@
   "science-truth": {
     "name": "Научная истина"
   },
-  "life": {
-    "name": "Жизнь"
+  "consciousness": {
+    "name": "Сознание"
   },
   "resource": {
     "name": "Ресурс",
