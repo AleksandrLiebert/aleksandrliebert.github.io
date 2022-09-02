@@ -1,5 +1,6 @@
 {
  "name": "Docendo Deus",
+ "display": "standalone",
  "icons": [
   {
    "src": "/icons/icon-36x36.png",
