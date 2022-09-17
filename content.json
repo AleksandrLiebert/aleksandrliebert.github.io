@@ -1,27 +1,34 @@
 {
   "main": {
     "name": "Docendo Deus",
-    "links": ["principle", "happiness", "resource"]
+    "links": ["principle", "happiness", "resource"],
+    "edit": "https://docs.google.com/document/d/1ydZn63--bP3S1pL68zDkcEvU1OaVBOYo8GyPy68aLJ8/edit?usp=sharing"
   },
   "principle": {
     "name": "Принципы",
-    "links": ["truth", "consciousness"]
+    "links": ["truth", "consciousness"],
+    "edit": "https://docs.google.com/document/d/1LW4aYBLR2ZaQJBafXTS533SJNW6SHw4ReeR_1NdtLzw/edit?usp=sharing"
   },
   "truth": {
     "name": "Истина",
-    "links": ["absolute-truth", "relative-truth", "science-truth"]
+    "links": ["absolute-truth", "relative-truth", "science-truth"],
+    "edit": "https://docs.google.com/document/d/1e8zdfoEu_nT4-plEV5P9KAFxoK9yiMxQp0paA439S0Q/edit?usp=sharing"
   },
   "absolute-truth": {
-    "name": "Абсолютная истина"
+    "name": "Абсолютная истина",
+    "edit": "https://docs.google.com/document/d/1e8zdfoEu_nT4-plEV5P9KAFxoK9yiMxQp0paA439S0Q/edit?usp=sharing"
   },
   "relative-truth": {
-    "name": "Относительная истина"
+    "name": "Относительная истина",
+    "edit": "https://docs.google.com/document/d/1e8zdfoEu_nT4-plEV5P9KAFxoK9yiMxQp0paA439S0Q/edit?usp=sharing"
   },
   "science-truth": {
-    "name": "Научная истина"
+    "name": "Научная истина",
+    "edit": "https://docs.google.com/document/d/1e8zdfoEu_nT4-plEV5P9KAFxoK9yiMxQp0paA439S0Q/edit?usp=sharing"
   },
   "consciousness": {
-    "name": "Сознание"
+    "name": "Сознание",
+    "edit": "https://docs.google.com/document/d/1ynVY82H3aDlo0SNqmo52uuMvRqBIcBIOiJ6fWwPKWAo/edit?usp=sharing"
   },
   "resource": {
     "name": "Ресурс",
@@ -29,7 +36,8 @@
   },
   "happiness": {
     "name": "Счастье",
-    "links": ["harmony", "friendship", "safety", "way", "adventure", "beauty", "faith"]
+    "links": ["harmony", "friendship", "safety", "way", "adventure", "beauty", "faith"],
+    "edit": "https://docs.google.com/document/d/1x4wDY95LlbjkhkwH_SQqs1Wh4I699bRSM9oRs-mxJ8U/edit?usp=sharing"
   },
   "harmony": {
     "name": "Гармония"

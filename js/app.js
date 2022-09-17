@@ -61,7 +61,7 @@ function setCategory(id){
     type: 'get',
     error: function(XMLHttpRequest, textStatus, errorThrown){
       $('#sigil').html('<img src="img/' + id + '.png" width="100%">')
-      $('#title').text(category.name)
+      $('.title').text(category.name)
 
        $('#neofit-content').text('Контент в разработке')
        $('#category').fadeIn(400)
@@ -70,11 +70,18 @@ function setCategory(id){
     },
     success: function(data){
       $('#sigil').html('<img src="img/' + id + '.png" width="100%">')
-      $('#title').text(category.name)
+      $('.title').text(category.name)
+      if (category['edit'] != null){
+        $('#edit-button').attr('href', category.edit)
+        $('#edit-button').removeClass('content-button-dissable')
+        $('#edit-button-img').attr('src', '/img/edit-icon.png')
+      } else {
+        $('#edit-button').addClass('content-button-dissable')
+        $('#edit-button-img').attr('src', '/img/transparent-bg.png')
+      }
 
       var converter = new showdown.Converter()
       var html      = converter.makeHtml(data);
-
       $('#neofit-content').html(html)
 
       $('.cross').click(function() {
@@ -141,7 +148,7 @@ function addContent(c, shift, last) {
         }
     }
 
-    res += '<a class="content content-c" data="' + c + '" href="?c=' + c + '"><img class="d-none d-sm-inline-block" src="img/mini-icon/' + c  + '.png" style="cursor: pointer; width: 5rem; height: 5rem;"><img class="d-inline-block d-sm-none" src="img/mini-icon/' + c  + '.png" style="cursor: pointer; width: 2.5rem; height: 2.5rem;">' + value.name + '</a>'
+    res += '<a class="content content-c" data="' + c + '" href="?c=' + c + '"><img class="d-none d-sm-inline-block" src="img/mini-icon/' + c  + '.png" style="cursor: pointer; width: 5rem; height: 5rem;margin-right:0.5rem;"><img class="d-inline-block d-sm-none" src="img/mini-icon/' + c  + '.png" style="cursor: pointer; width: 2.5rem; height: 2.5rem; margin-right: 0.5rem;">'  + value.name + '</a>'
     res += '</div>'
     for (var i in value.links) {
         if (last !== undefined) {

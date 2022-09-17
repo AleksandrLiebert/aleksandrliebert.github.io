@@ -1,7 +1,7 @@
 <html>
 <head>
   <meta charset="utf-8">
-  <meta name="viewport" content="width=device-width, user-scalable=no, initial-scale=1, maximum-scale=1, minimal-ui, shrink-to-fit=no">
+  <meta name="viewport" content="width=device-width, user-scalable=no, initial-scale=1, maximum-scale=1, shrink-to-fit=no">
   <meta name="keywords" content="саморазвите, мировоззрение, самосовершенствование, здоровье, лайфхак, биохак, нейрохак, деньги, счастье, смысл жизни, истина">
   <meta http-equiv="content-language" content="ru">
 	
@@ -19,7 +19,7 @@
   <meta name="mobile-web-app-capable" content="yes">
   <meta name="apple-mobile-web-app-title" content="Docendo Deus">
   <link rel="manifest" href="/icons/manifest.json">
-  <meta name="apple-mobile-web-app-status-bar-style" content="#111">
+  <meta name="apple-mobile-web-app-status-bar-style" content="#151515">
   
   <!-- iOS icons -->
   <link rel="apple-touch-icon" sizes="57x57" href="/icons/icon-57x57.png">
@@ -50,7 +50,7 @@
 			<div id="sigil" class="offset-3 col-6 col-md-4 offset-md-4"></div>
 			<div class="col-md-8 offset-md-2 text-justify">
 
-				<h1 id="title"></h1>
+				<h1 class="title"></h1>
         <div class="container d-none">
           <div class="row">
             <div id="level-neofit" class="col-4 level level-active">Неофит</div>
@@ -64,10 +64,18 @@
           <div id="sigil-info"></div>
           <div id="sigil-ref" class="container"></div>
         </div>
-  			<div id="back" class="footer">
-          			<hr />
-          			<a class="content" href="?c=content">Содержание</a>
-				<hr />
+  			<div id="back" class="header">
+            <div style="display: inline-block;width: 4rem; height: 4rem;">
+              <a class="content content-button"><img height="100%" width="100%" src="/img/content-icon.png" /></a>
+            </div>
+            <div style="display: inline-block;">
+              <hr />
+          		<span class="title">Содержание</span>
+				      <hr />
+            </div>
+            <div style="display: inline-block;width:4rem; height:4rem;">
+              <a id="edit-button" class="content-button" target="_blank"><img id="edit-button-img" height="100%" width="100%" src="/img/edit-icon.png" /></a>
+            </div>
   			</div>
 			</div>
 		</div>

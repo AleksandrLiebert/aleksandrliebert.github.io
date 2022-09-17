@@ -58,6 +58,16 @@ p {
 	color: var(--text);
 }
 
+.content-button {
+  width: 4rem;
+  height: 4rem;
+  cursor: pointer;
+}
+
+.content-button-dissable {
+  cursor: default;
+}
+
 .cross {
 	color: var(--text);
 	text-decoration: underline;
@@ -93,12 +103,17 @@ p {
   background-color: rgb(33, 33, 33);
 }
 
-.footer {
+.header {
   position: fixed;
   left: 0;
-  bottom: 0;
+  top: 0;
   width: 100%;
+  height: 4rem;
   background-color: rgb(21, 21, 21);
   color: var(--text);
   text-align: center;	
+}
+
+#sigil {
+  margin-top: 4rem;
 }
