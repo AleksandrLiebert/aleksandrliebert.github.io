@@ -26,7 +26,6 @@ h3 {
 }
 
 hr {
-	width: 10rem;
 	border-top: 1px solid var(--text);
 	margin-top: 0.5rem;
 	margin-bottom: 0.5rem;
@@ -68,6 +67,27 @@ p {
   cursor: default;
 }
 
+.content-button-container {
+  position: absolute;
+  left: 15px;
+  display: inline-block;
+  width: 4rem; 
+  height: 4rem;
+}
+
+.edit-button-container {
+  position: absolute;
+  right: 15px;
+  display: inline-block;
+  width:4rem;
+  height:4rem;
+}
+
+.title-header-container {
+  display: inline-block;
+  width: calc(100% - 8rem);
+}
+
 .cross {
 	color: var(--text);
 	text-decoration: underline;
@@ -106,7 +126,8 @@ p {
 .header {
   position: fixed;
   left: 0;
-  top: 0;
+  top: auto;
+  bottom: 0;
   width: 100%;
   height: 4rem;
   background-color: rgb(21, 21, 21);
@@ -114,6 +135,25 @@ p {
   text-align: center;	
 }
 
-#sigil {
-  margin-top: 4rem;
+@media (min-width: 576px) {
+  .header {
+    top: 0;
+    bottom: auto;
+  }
+
+  #sigil {
+    margin-top: 4rem;
+  }
+}
+
+@media (min-width: 768px) {
+
+}
+
+@media (min-width: 992px) {
+
+}
+
+@media (min-width: 1200px) {
+
 }
