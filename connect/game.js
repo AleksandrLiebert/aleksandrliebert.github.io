@@ -857,6 +857,7 @@ function pauseHandler() {
 	if (this.classList.contains('fa-click')) {
 		timeStop = true
 		document.getElementById('game').classList.add('hide')
+		document.getElementById('background-stub').classList.remove('hide')
 		document.getElementsByClassName('panel-left')[0].classList.add('hide')
 		document.getElementsByClassName('panel-right')[0].classList.add('hide')
 		document.getElementsByClassName('turns')[0].classList.add('hide')
@@ -864,6 +865,7 @@ function pauseHandler() {
 		this.classList.add('fa-active')
 	} else {
 		timeStop = false
+		document.getElementById('background-stub').classList.add('hide')
 		document.getElementById('game').classList.remove('hide')
 		document.getElementsByClassName('panel-left')[0].classList.remove('hide')
 		document.getElementsByClassName('panel-right')[0].classList.remove('hide')
@@ -897,7 +899,6 @@ function endGame() {
 				newRecord(level, endTime, score)
 				nr = true
 		}
-		console.log(nr)
 		document.getElementById('panels').classList.add('hide')
 		document.getElementById('game').classList.add('blur')
 		document.getElementById('game-over').classList.remove('hide')
