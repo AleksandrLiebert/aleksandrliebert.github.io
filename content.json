@@ -40,7 +40,11 @@
     "edit": "https://docs.google.com/document/d/1x4wDY95LlbjkhkwH_SQqs1Wh4I699bRSM9oRs-mxJ8U/edit?usp=sharing"
   },
   "harmony": {
-    "name": "Гармония"
+    "name": "Гармония",
+    "links": ["meditation"]
+  },
+  "meditation": {
+    "name": "Медитация"
   },
   "safety": {
     "name": "Безопасность"
