@@ -41,10 +41,13 @@
   },
   "harmony": {
     "name": "Гармония",
-    "links": ["meditation"]
+    "links": ["meditation", "self-control"]
   },
   "meditation": {
     "name": "Медитация"
+  },
+  "self-control": {
+    "name": "Самоконтроль"
   },
   "safety": {
     "name": "Безопасность"
