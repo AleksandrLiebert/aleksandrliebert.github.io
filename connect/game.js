@@ -998,7 +998,13 @@ function setEvents() {
 	window.onload = drawTurns
 }
 
-document.oncontextmenu = function (){return false};
+function KeyPress(e) {
+      var evtobj = window.event? event : e
+      if (evtobj.keyCode == 90 && evtobj.ctrlKey) { cancelTurn() }
+}
+
+document.onkeydown = KeyPress
+document.oncontextmenu = function (){return false}
 readSettings()
 setEvents()
 startGame()
