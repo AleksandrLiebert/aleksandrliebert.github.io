@@ -41,7 +41,7 @@
   },
   "harmony": {
     "name": "Гармония",
-    "links": ["meditation", "self-control", "reflection"]
+    "links": ["meditation", "self-control", "reflection", "genuine"]
   },
   "meditation": {
     "name": "Медитация"
@@ -51,6 +51,9 @@
   },
   "reflection": {
     "name": "Рефлексия"
+  },
+  "genuine": {
+    "name": "Подлинное"
   },
   "safety": {
     "name": "Безопасность"
