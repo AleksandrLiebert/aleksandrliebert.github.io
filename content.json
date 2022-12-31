@@ -71,7 +71,8 @@
     "name": "Дружба"
   },
   "way": {
-    "name": "Путь"
+    "name": "Путь",
+    "edit": "https://docs.google.com/document/d/1sKtYWA8wtdSpe8Z3FW6V8a0g32cRkHlrbwnq8DzxNe8/edit?usp=sharing"
   },
   "adventure": {
     "name": "Приключение",
