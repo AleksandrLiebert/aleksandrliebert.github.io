@@ -41,19 +41,24 @@
   },
   "harmony": {
     "name": "Гармония",
-    "links": ["meditation", "self-control", "reflection", "genuine"]
+    "links": ["meditation", "self-control", "reflection", "genuine"],
+    "edit": "https://docs.google.com/document/d/1a3oFj28ty3Si9UB9CcvvfgL2UcXdx4cNtxOSjPYgvik/edit?usp=sharing"
   },
   "meditation": {
-    "name": "Медитация"
+    "name": "Медитация",
+    "edit": "https://docs.google.com/document/d/1a3oFj28ty3Si9UB9CcvvfgL2UcXdx4cNtxOSjPYgvik/edit?usp=sharing"
   },
   "self-control": {
-    "name": "Самообладание"
+    "name": "Самообладание",
+    "edit": "https://docs.google.com/document/d/1a3oFj28ty3Si9UB9CcvvfgL2UcXdx4cNtxOSjPYgvik/edit?usp=sharing"
   },
   "reflection": {
-    "name": "Рефлексия"
+    "name": "Рефлексия",
+    "edit": "https://docs.google.com/document/d/1a3oFj28ty3Si9UB9CcvvfgL2UcXdx4cNtxOSjPYgvik/edit?usp=sharing"
   },
   "genuine": {
-    "name": "Подлинное"
+    "name": "Подлинное",
+    "edit": "https://docs.google.com/document/d/1a3oFj28ty3Si9UB9CcvvfgL2UcXdx4cNtxOSjPYgvik/edit?usp=sharing"
   },
   "safety": {
     "name": "Безопасность"
