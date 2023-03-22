@@ -36,7 +36,7 @@
   },
   "happiness": {
     "name": "Счастье",
-    "links": ["harmony", "friendship", "safety", "way", "adventure", "beauty", "faith"],
+    "links": ["harmony", "friendship", "safety", "way", "adventure", "freedom", "beauty", "faith"],
     "edit": "https://docs.google.com/document/d/1x4wDY95LlbjkhkwH_SQqs1Wh4I699bRSM9oRs-mxJ8U/edit?usp=sharing"
   },
   "harmony": {
@@ -82,6 +82,10 @@
   "adventure": {
     "name": "Приключение",
     "links": ["conflict"]
+  },
+  "freedom": {
+    "name": "Свобода",
+    "edit": "https://docs.google.com/document/d/1rLYnJYqHMczEAYBs9dt79K1Xs0Hmiqnc3GOF8xtbCF4/edit?usp=sharing"
   },
   "faith": {
     "name": "Вера"
