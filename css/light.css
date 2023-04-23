@@ -1,0 +1,8 @@
+@import url('https://fonts.googleapis.com/css2?family=Rubik&display=swap');
+:root {
+    --font: 'Rubik', sans-serif;
+}
+
+body {
+  filter: invert(90%);
+}

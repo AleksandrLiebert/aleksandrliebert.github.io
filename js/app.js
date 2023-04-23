@@ -2,58 +2,8 @@ function setTitle(text) {
   document.getElementsByTagName('TITLE')[0].innerHTML = text
 }
 
-  function selectLevel(level) {
-   var currentLevel = $('.level-active')[0].id.substr(6)
-   if (level == currentLevel){
-     return
-   }
-
-   if (animationRun === true) {
-     return
-   }
-
-   animationRun = true
-
-   $('#level-' + currentLevel).removeClass('level-active')
-   $('#level-' + level).addClass('level-active')
-
-   contentSize = $('#' + currentLevel + '-content')[0].offsetWidth
-
-   if (level == 'neofit') {
-     firstShift = contentSize
-     secondShift = '-' + contentSize
-   } else if (level == 'sgl') {
-     firstShift = '-' + contentSize
-     secondShift = contentSize
-   } else if (currentLevel == 'neofit') {
-     firstShift = '-' + contentSize
-     secondShift = contentSize
-   } else {
-     firstShift = contentSize
-     secondShift = '-' + contentSize
-   }
-
-   currentBlock = '#' + currentLevel + '-content'
-   nextBlock = '#' + level + '-content'
-
-   $(currentBlock).animate({
-     opacity: 0,
-     left: firstShift,
-   }, 500, function () {
-     $(currentBlock).hide()
-     $(nextBlock)[0].style.display = 'block'
-     $(nextBlock)[0].style.left = secondShift
-     $(nextBlock).animate({
-       opacity: 1,
-       left: '0px'
-     }, 500, function() {
-       animationRun = false
-     })
-   })
- }
 
 function setCategory(id){
-  selectLevel('neofit')
   var category = content[id]
 
   $.ajax({
@@ -82,7 +32,7 @@ function setCategory(id){
 
       var converter = new showdown.Converter()
       var html      = converter.makeHtml(data);
-      $('#neofit-content').html(html)
+      $('#content').html(html)
 
       $('.cross').click(function() {
         var id = this.getAttribute('data')
@@ -94,38 +44,6 @@ function setCategory(id){
       setTitle(category.name)
    }
   })
-
- /*$.get('wiser/' + id + '.html', function(data) {
-   $('#wiser-content').html(data)
- }).fail(function() {
-   $('#wiser-content').text('Контент в разработке')
- })
-
- $.get('sigil/' + id + '.html', function(data) {
-   $('#sigil-info').html(data)
- }).fail(function() {
-   $('#sigil-info').text('Контент в разработке')
- })*/
-
- if (content[id].links !== null) {
-   var res = '<div class="row">'
-   for(var i in content[id].links) {
-     var link = content[id].links[i]
-     res += '<div class="col-xl-3 col-6">'
-     res += '<a class="c-img sgl-ref-link" data="' + link + '" href="?c=' + link + '"><img src="img/' + link  + '.png" width="100%" style="cursor: pointer;"></a>'
-     res += '<p class="text-center">' + content[link].name + '</p>'
-     res += '</div>'
-   }
-   res += '</div>'
-   $('#sigil-ref').html(res)
-   $('.sgl-ref-link').click(function() {
-     var id = this.getAttribute('data')
-     showCategory(id)
-     return false
-   })
- } else {
-   $('#sigil-ref').html('')
- }
 }
 
 function addContent(c, shift, last) {
@@ -238,20 +156,26 @@ function resizeWindow() {
   }
 }
 
+function reloadColorSchema() {
+  if (localStorage.getItem('color-schema') == 'dark') {
+    $('#color-theme').first().attr('href', 'css/dark.css')
+    $('#color-schema-button-img').attr('src', 'img/sun-icon.png')
+  } else {
+    $('#color-theme').first().attr('href', 'css/light.css')
+    $('#color-schema-button-img').attr('src', 'img/moon-icon.png')
+  }
+}
 
+function switchColorSchema() {
+  if (localStorage.getItem('color-schema') == 'dark') {
+    localStorage.setItem('color-schema', 'light')
+  } else {
+    localStorage.setItem('color-schema', 'dark')
+  }
+  reloadColorSchema()
+}
 
-$('#level-neofit').click(function() {
-  selectLevel('neofit')
-})
-
-$('#level-wiser').click(function() {
-  selectLevel('wiser')
-})
-
-$('#level-sgl').click(function() {
-  selectLevel('sgl')
-})
-
-animationRun = false
+$('#switch-color-schema').click(switchColorSchema)
 
 $(window).resize(resizeWindow)
+reloadColorSchema()
