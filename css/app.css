@@ -135,6 +135,14 @@ p {
   text-align: center;	
 }
 
+.content-row {
+  white-space: nowrap;
+}
+
+.content-row-text {
+  display: inline-block;
+}
+
 @media (min-width: 576px) {
   .header {
     top: 0;

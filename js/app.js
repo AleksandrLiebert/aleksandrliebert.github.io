@@ -48,7 +48,7 @@ function setCategory(id){
 
 function addContent(c, shift, last) {
     var value = content[c]
-    var res = '<div class="col-12 offset-md-2 col-md-10 text-left">'
+    var res = '<div class="col-12 offset-md-2 col-md-10 text-left content-row">'
 
     for (var i = 0; i < shift; i++) {
         if (i + 1 !== shift) {
@@ -66,7 +66,7 @@ function addContent(c, shift, last) {
         }
     }
 
-    res += '<a class="content content-c" data="' + c + '" href="?c=' + c + '"><img class="d-none d-sm-inline-block" src="img/mini-icon/' + c  + '.png" style="cursor: pointer; width: 5rem; height: 5rem;margin-right:0.5rem;"><img class="d-inline-block d-sm-none" src="img/mini-icon/' + c  + '.png" style="cursor: pointer; width: 2.5rem; height: 2.5rem; margin-right: 0.5rem;">'  + value.name + '</a>'
+    res += '<a class="content content-c" data="' + c + '" href="?c=' + c + '"><img class="d-none d-sm-inline-block" src="img/mini-icon/' + c  + '.png" style="cursor: pointer; width: 5rem; height: 5rem;margin-right:0.5rem;"><img class="d-inline-block d-sm-none" src="img/mini-icon/' + c  + '.png" style="cursor: pointer; width: 2.5rem; height: 2.5rem; margin-right: 0.5rem;"><div class="content-row-text">'  + value.name + '</div></a>'
     res += '</div>'
     for (var i in value.links) {
         if (last !== undefined) {
