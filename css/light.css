@@ -1,6 +1,6 @@
-@import url('https://fonts.googleapis.com/css2?family=Rubik&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Roboto+Condensed&display=swap');
 :root {
-    --font: 'Rubik', sans-serif;
+    --font: 'Roboto Condensed', sans-serif;
 }
 
 body {
