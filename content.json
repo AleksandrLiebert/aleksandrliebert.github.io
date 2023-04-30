@@ -34,7 +34,7 @@
   },
   "happiness": {
     "name": "Счастье",
-    "links": ["harmony", "relations", "safety", "way", "adventure", "freedom", "beauty", "faith"],
+    "links": ["harmony", "relations", "safety", "development", "adventure", "freedom", "beauty", "faith"],
     "edit": "https://docs.google.com/document/d/1x4wDY95LlbjkhkwH_SQqs1Wh4I699bRSM9oRs-mxJ8U/edit?usp=sharing"
   },
   "harmony": {
@@ -74,8 +74,8 @@
   "relations": {
     "name": "Отношения"
   },
-  "way": {
-    "name": "Путь",
+  "development": {
+    "name": "Развитие",
     "edit": "https://docs.google.com/document/d/1sKtYWA8wtdSpe8Z3FW6V8a0g32cRkHlrbwnq8DzxNe8/edit?usp=sharing",
     "links": ["principle", "power"]
   },
@@ -91,21 +91,6 @@
   "faith": {
     "name": "Вера",
     "links": ["truth", "consciousness"]
-  },
-  "evolution": {
-    "name": "Развитие"
-  },
-  "definition": {
-    "name": "Определение"
-  },
-  "experience": {
-    "name": "Опыт"
-  },
-  "theory": {
-    "name": "Теория"
-  },
-  "feeling": {
-    "name": "Чувства"
   },
   "healt": {
     "name": "Здоровье"
