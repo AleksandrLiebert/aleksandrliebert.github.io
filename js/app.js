@@ -13,7 +13,7 @@ function setCategory(id){
       $('#sigil').html('<img src="img/' + id + '.png" width="100%">')
       $('.title').text(category.name)
 
-       $('#neofit-content').text('Контент в разработке')
+       $('#content').text('Контент в разработке')
        $('#category').fadeIn(400)
        resizeWindow()
        setTitle('Not Found')
