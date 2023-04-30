@@ -49,24 +49,23 @@ function setCategory(id){
 function addContent(c, shift, last) {
     var value = content[c]
     var res = '<div class="col-12 offset-md-2 col-md-10 text-left content-row">'
-
     for (var i = 0; i < shift; i++) {
-        if (i + 1 !== shift) {
-            if (last[i]) {
-                res += '<img class="d-none d-sm-inline-block" src="img/tree/space.png" style="width: 5rem; height: 5rem;" />' + '<img class="d-inline-block d-sm-none" src="img/tree/space.png" style="width: 2.5rem; height: 2.5rem;" />'
-            } else {
-                res += '<img class="d-none d-sm-inline-block" src="img/tree/line.png" style="width: 5rem; height: 5rem;" />' + '<img class="d-inline-block d-sm-none" src="img/tree/line.png" style="width: 2.5rem; height: 2.5rem;" />'
-            }
-        } else {
-            if (last[i]) {
-                res += '<img class="d-none d-sm-inline-block" src="img/tree/angle.png" style="width: 5rem; height: 5rem;" />' + '<img class="d-inline-block d-sm-none" src="img/tree/angle.png" style="width: 2.5rem; height: 2.5rem;" />'
-            } else {
-                res += '<img class="d-none d-sm-inline-block" src="img/tree/branch.png" style="width: 5rem; height: 5rem;" />' + '<img class="d-inline-block d-sm-none" src="img/tree/branch.png" style="width: 2.5rem; height: 2.5rem;" />'
-            }
-        }
-    }
+      if (i + 1 !== shift) {
+          if (last[i]) {
+              res += '<img class="d-inline-block" src="img/tree/space.png" style="width: 2.5rem; height: 2.5rem;" />'
+          } else {
+              res += '<img class="d-inline-block" src="img/tree/line.png" style="width: 2.5rem; height: 2.5rem;" />'
+          }
+      } else {
+          if (last[i]) {
+              res += '<img class="d-inline-block" src="img/tree/angle.png" style="width: 2.5rem; height: 2.5rem;" />'
+          } else {
+              res += '<img class="d-inline-block" src="img/tree/branch.png" style="width: 2.5rem; height: 2.5rem;" />'
+          }
+      }
+  }
 
-    res += '<a class="content content-c" data="' + c + '" href="?c=' + c + '"><img class="d-none d-sm-inline-block" src="img/mini-icon/' + c  + '.png" style="cursor: pointer; width: 5rem; height: 5rem;margin-right:0.5rem;"><img class="d-inline-block d-sm-none" src="img/mini-icon/' + c  + '.png" style="cursor: pointer; width: 2.5rem; height: 2.5rem; margin-right: 0.5rem;"><div class="content-row-text">'  + value.name + '</div></a>'
+    res += '<a class="content content-c" data="' + c + '" href="?c=' + c + '"><img class="d-inline-block" src="img/mini-icon/' + c  + '.png" style="cursor: pointer; width: 2.5rem; height: 2.5rem; margin-right: 0.5rem;"><div class="content-row-text">'  + value.name + '</div></a>'
     res += '</div>'
     for (var i in value.links) {
         if (last !== undefined) {
@@ -83,8 +82,12 @@ function addContent(c, shift, last) {
 }
 
 function setContent() {
-  var res = '<div style="height: 3rem;" class="row"></div><div class="row">'
-  res += addContent('main', 0)
+  var res = ''
+  res += '<div class="d-inline-block" style="height: 1rem;" class="row"></div><div class="row">'
+  res += '<div class="col-12 offset-md-2 col-md-10 text-left content-row">'
+  res += '<a class="content content-c" data="main" href="?c=main"><img class="d-inline-block" src="img/mini-icon/main.png" style="cursor: pointer; width: 2.5rem; height: 2.5rem; margin-right: 0.5rem;"><div class="content-row-text">Docendo Deus</div></a>'
+  res += '</div>'
+  res += addContent('happiness', 0)
   res += '</div>'
   $('#contents').html(res)
   $('.content-c').click(function() {
