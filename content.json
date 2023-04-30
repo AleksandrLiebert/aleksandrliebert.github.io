@@ -1,12 +1,11 @@
 {
   "main": {
     "name": "Docendo Deus",
-    "links": ["principle", "happiness", "resource"],
+    "links": ["happiness", "resource"],
     "edit": "https://docs.google.com/document/d/1ydZn63--bP3S1pL68zDkcEvU1OaVBOYo8GyPy68aLJ8/edit?usp=sharing"
   },
   "principle": {
     "name": "Принципы",
-    "links": ["truth", "consciousness"],
     "edit": "https://docs.google.com/document/d/1LW4aYBLR2ZaQJBafXTS533SJNW6SHw4ReeR_1NdtLzw/edit?usp=sharing"
   },
   "truth": {
@@ -31,12 +30,11 @@
     "edit": "https://docs.google.com/document/d/1ynVY82H3aDlo0SNqmo52uuMvRqBIcBIOiJ6fWwPKWAo/edit?usp=sharing"
   },
   "resource": {
-    "name": "Ресурс",
-    "links": ["power", "healt", "possibility", "time", "experience", "theory", "relations", "feeling"]
+    "name": "Ресурс"
   },
   "happiness": {
     "name": "Счастье",
-    "links": ["harmony", "friendship", "safety", "way", "adventure", "freedom", "beauty", "faith"],
+    "links": ["harmony", "relations", "safety", "way", "adventure", "freedom", "beauty", "faith"],
     "edit": "https://docs.google.com/document/d/1x4wDY95LlbjkhkwH_SQqs1Wh4I699bRSM9oRs-mxJ8U/edit?usp=sharing"
   },
   "harmony": {
@@ -61,7 +59,8 @@
     "edit": "https://docs.google.com/document/d/1a3oFj28ty3Si9UB9CcvvfgL2UcXdx4cNtxOSjPYgvik/edit?usp=sharing"
   },
   "safety": {
-    "name": "Безопасность"
+    "name": "Безопасность",
+    "links": ["healt"]
   },
   "beauty" : {
     "name": "Красота"
@@ -72,23 +71,26 @@
   "strategies": {
     "name": "Сила воли"
   },
-  "friendship": {
-    "name": "Дружба"
+  "relations": {
+    "name": "Отношения"
   },
   "way": {
     "name": "Путь",
-    "edit": "https://docs.google.com/document/d/1sKtYWA8wtdSpe8Z3FW6V8a0g32cRkHlrbwnq8DzxNe8/edit?usp=sharing"
+    "edit": "https://docs.google.com/document/d/1sKtYWA8wtdSpe8Z3FW6V8a0g32cRkHlrbwnq8DzxNe8/edit?usp=sharing",
+    "links": ["principle", "power"]
   },
   "adventure": {
     "name": "Приключение",
-    "links": ["conflict"]
+    "links": ["possibility", "conflict"]
   },
   "freedom": {
     "name": "Свобода",
-    "edit": "https://docs.google.com/document/d/1rLYnJYqHMczEAYBs9dt79K1Xs0Hmiqnc3GOF8xtbCF4/edit?usp=sharing"
+    "edit": "https://docs.google.com/document/d/1rLYnJYqHMczEAYBs9dt79K1Xs0Hmiqnc3GOF8xtbCF4/edit?usp=sharing",
+    "links": ["time"]
   },
   "faith": {
-    "name": "Вера"
+    "name": "Вера",
+    "links": ["truth", "consciousness"]
   },
   "evolution": {
     "name": "Развитие"
@@ -104,9 +106,6 @@
   },
   "feeling": {
     "name": "Чувства"
-  },
-  "relations": {
-    "name": "Отношения"
   },
   "healt": {
     "name": "Здоровье"
