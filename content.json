@@ -77,7 +77,7 @@
   "development": {
     "name": "Развитие",
     "edit": "https://docs.google.com/document/d/1sKtYWA8wtdSpe8Z3FW6V8a0g32cRkHlrbwnq8DzxNe8/edit?usp=sharing",
-    "links": ["principle", "power"]
+    "links": ["principle", "experience", "power"]
   },
   "adventure": {
     "name": "Приключение",
@@ -110,5 +110,8 @@
   },
   "money": {
     "name": "Деньги"
+  },
+  "experience": {
+    "name": "Самообучение"
   }
 }
