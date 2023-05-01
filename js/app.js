@@ -42,6 +42,7 @@ function setCategory(id){
       $('#category').fadeIn(400)
       resizeWindow()
       setTitle(category.name)
+      window.scrollTo(0, 0)
    }
   })
 }
