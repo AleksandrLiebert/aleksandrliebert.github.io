@@ -106,7 +106,8 @@
     "name": "Время"
   },
   "possibility": {
-    "name": "Возможности"
+    "name": "Возможности",
+    "edit": "https://docs.google.com/document/d/1Z7dgz7iclktllD1Phw-55azQlkcORNYdJmblsBJlfpQ/edit?usp=sharing"
   },
   "money": {
     "name": "Деньги"
