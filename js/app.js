@@ -33,7 +33,7 @@ function setCategory(id){
       var converter = new showdown.Converter()
       var html      = converter.makeHtml(data);
       $('#content').html(html)
-
+      showTest()
       $('.cross').click(function() {
         var id = this.getAttribute('data')
         showCategory(id)
@@ -183,3 +183,58 @@ $('#switch-color-schema').click(switchColorSchema)
 
 $(window).resize(resizeWindow)
 reloadColorSchema()
+
+let testData = null
+let currentQuestion = null
+let allCorrect = true
+
+function showQuestion() {
+  questionId = currentQuestion.toString()
+  $('#test-text').text(testData[questionId].question)
+  answers = testData[questionId].answers
+  let res = ''
+  for (let i = 0; i < answers.length; i++) {
+    answer = answers[i]
+    res += `<input id="test-${i}" class="test-radio" type="radio" name="test-radio" value="${i}" /> <label for="test-${i}">${answer}</label>`
+    if (i < answers.length - 1) {
+      res += '<br />'
+    }
+  }
+  $('#test-answers').html(res)
+}
+
+function testButtonAction() {
+  if ($('#test-button').val() === 'Начать тест') {
+    $('#test-button').val('Далее')
+    currentQuestion = 0
+    showQuestion()
+  } else if ($('.test-radio:checked').length != 0) {
+    answerId = parseInt($('.test-radio:checked').val())
+    if (testData[currentQuestion.toString()].correct != answerId) {
+      allCorrect = false
+    }
+    currentQuestion += 1
+    if (currentQuestion == testData.length) {
+      $('#test-answers').html('')
+      if (allCorrect) {
+        $('#test-text').text(testData.win)
+      } else {
+        $('#test-text').text(testData.lose)
+      }
+      $('#test-button').hide()
+    } else {
+      showQuestion()
+    }
+  }
+}
+
+function showTest() {
+  if ($('#base-test').length == 0) {
+    return
+  }
+  $.getJSON('data/base-test.json', function(data){
+    $('#test-text').text(data.preview)
+    $('#test-button').click(testButtonAction)
+    testData = data
+  })
+}

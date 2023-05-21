@@ -60,7 +60,7 @@
   },
   "safety": {
     "name": "Безопасность",
-    "links": ["healt"]
+    "links": ["healt", "emergency"]
   },
   "beauty" : {
     "name": "Красота"
@@ -81,7 +81,7 @@
   },
   "adventure": {
     "name": "Приключение",
-    "links": ["possibility", "conflict"]
+    "links": ["possibility", "conflict", "seduction"]
   },
   "freedom": {
     "name": "Свобода",
@@ -90,14 +90,14 @@
   },
   "faith": {
     "name": "Вера",
-    "links": ["truth", "consciousness"]
+    "links": ["truth", "consciousness", "being", "morality", "grand-design", "rituals"]
   },
   "healt": {
     "name": "Здоровье"
   },
   "power": {
     "name": "Власть",
-    "links": ["strategies", "sexuality", "money"]
+    "links": ["physical-force", "strategies", "sexuality", "money", "technology", "ideology", "law", "submission"]
   },
   "sexuality": {
     "name": "Сексуальность"
@@ -114,5 +114,41 @@
   },
   "experience": {
     "name": "Самообучение"
+  },
+  "seduction": {
+    "name": "Соблазнение"
+  },
+  "morality": {
+    "name": "Мораль"
+  },
+  "being": {
+    "name": "Бытие"
+  },
+  "grand-design": {
+    "name": "Высший замысел"
+  },
+  "rituals": {
+    "name": "Ритуалы"
+  },
+  "physical-force": {
+    "name": "Физическая сила"
+  },
+  "technology": {
+    "name": "Технологии"
+  },
+  "ideology": {
+    "name": "Идеология"
+  },
+  "law": {
+    "name": "Закон"
+  },
+  "submission": {
+    "name": "Подчинение"
+  },
+  "emergency": {
+    "name": "Чрезвычайные ситуации"
+  },
+  "base-test": {
+    "name": "Вводный тест"
   }
 }

@@ -1,8 +1,11 @@
 @import url('https://fonts.googleapis.com/css2?family=Roboto+Condensed&display=swap');
 :root {
     --font: 'Roboto Condensed', sans-serif;
+    --text: rgb(78, 78, 78);
+    --fon: rgb(221, 221, 221);
+    --fon-header: rgb(201, 201, 201);
 }
 
-body {
+img {
   filter: invert(90%);
 }
