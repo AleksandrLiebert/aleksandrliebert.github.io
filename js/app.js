@@ -217,9 +217,9 @@ function testButtonAction() {
     if (currentQuestion == testData.length) {
       $('#test-answers').html('')
       if (allCorrect) {
-        $('#test-text').text(testData.win)
+        $('#test-text').html(testData.win)
       } else {
-        $('#test-text').text(testData.lose)
+        $('#test-text').html(testData.lose)
       }
       $('#test-button').hide()
     } else {
