@@ -63,7 +63,8 @@
     "links": ["healt", "emergency"]
   },
   "beauty" : {
-    "name": "Красота"
+    "name": "Красота",
+    "links": ["confirmation-bias"]
   },
   "conflict": {
     "name": "Конфликт"
@@ -151,5 +152,9 @@
   },
   "base-test": {
     "name": "Вводный тест"
+  },
+  "confirmation-bias": {
+    "name": "Избегание когнитивного диссонанса",
+    "edit": "https://docs.google.com/document/d/1Zp0YYmRjgQKHRyFQ3mhgrWCE-C1mjaH9bUvFD96NV-c/edit?usp=sharing"
   }
 }
