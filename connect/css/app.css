@@ -1,3 +1,7 @@
+:root {
+  --cursor-color: rgba(255, 255, 255, 0.3);
+}
+
 @font-face {
     font-family: AppFont;
     src: url("../fonts/17607.otf") format("opentype");
@@ -19,6 +23,10 @@ body {
 .block {
   background: transparent;
   display: inline-block;
+}
+
+.block:hover {
+  background: var(--cursor-color);
 }
 
 .far {
@@ -54,16 +62,6 @@ body {
 .fa-click:active {
   color: #6c6;
   text-shadow: 0 0 5px #6c6;
-}
-
-.block-cursor {
-  background: rgba(255, 255, 255, 0.3);
-  display: inline-block;
-}
-
-.block-hint {
-  background: rgba(0, 255, 0, 0.3);
-  display: inline-block;
 }
 
 .block-hint-lock {

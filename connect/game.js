@@ -55,22 +55,6 @@ function allBlocks(f) {
   }
 }
 
-function addCursor() {
-  var blocks = document.getElementsByClassName('block')
-  for (var i = 0; i < blocks.length; i++) {
-    blocks[i].onmouseenter = function() {
-		if (hintActive) {
-			this.className = 'block-hint'
-		} else {
-      		this.className = 'block-cursor'
-		}
-    }
-    blocks[i].onmouseleave = function() {
-      this.className = 'block'
-    }
-  }
-}
-
 function drawBlock(x, y) {
   var connector
   if (fieldFilled) {
@@ -447,6 +431,11 @@ function rotateRightConnector(connector) {
 	connector.setAttribute('connector', contacts)
 }
 
+function changeColorCursor(color) {
+	var root = document.querySelector(':root')
+	root.style.setProperty('--cursor-color', color)
+}
+
 function endAnimation() {
 	rotateConnector.setAttribute('rotate', '0')
 	if (rotateConnector.classList.contains('contacts-rotate-left')) {
@@ -477,7 +466,7 @@ function blockClick(handle) {
 	}
 	if (handle.button == 0 && !this.classList.contains('block-lock') && !this.classList.contains('block-hint-lock') && this.getAttribute('connector') != '0000') {
 		if (hintActive) {
-			hintActive = false
+			hintState(false)
 			var original = this.getAttribute('original-connector')
 			var ds = 0
 			while (original != this.getAttribute('connector')) {
@@ -696,23 +685,32 @@ function createField() {
 	time = 0
 }
 
+function hintState(state) {
+	hintActive = state
+	if (state) {
+		changeColorCursor('rgba(0, 255, 0, 0.3)')
+	} else {
+		changeColorCursor('rgba(255, 255, 255, 0.3)')
+	}
+}
+
 function getHint() {
 	if (this.classList.contains('fa-disable')) {
 		return
 	}
 	if (hintActive) {
-		hintActive = false
+		hintState(false)
 		this.classList.remove('fa-active')
 		this.classList.add('fa-click')
 	} else {
-		hintActive = true
+		hintState(true)
 		this.classList.remove('fa-click')
 		this.classList.add('fa-active')
 	}
 }
 
 function initHint() {
-	hintActive = false
+	hintState(false)
 	var hintButton = document.getElementById('get-hint')
 	hintButton.classList.remove('fa-active')
 	hintButton.classList.remove('fa-disable')
@@ -721,8 +719,7 @@ function initHint() {
 
 function startGame() {
 	initHint()
-  createField()
-  addCursor()
+	createField()
 	resizeField()
 	drawTurns()
 }
@@ -901,6 +898,7 @@ function endGame() {
 		}
 		document.getElementById('panels').classList.add('hide')
 		document.getElementById('game').classList.add('blur')
+		changeColorCursor('rgba(0, 0, 0, 0)')
 		document.getElementById('game-over').classList.remove('hide')
 		document.getElementById('end-time').innerText = endTime
 		document.getElementById('end-turns').innerText = score
