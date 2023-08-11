@@ -1,0 +1,176 @@
+<!DOCTYPE html>
+<html xml:lang="ru">
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, user-scalable=no, initial-scale=1, maximum-scale=1, shrink-to-fit=no">
+    <link rel="stylesheet" href="/css/bootstrap.min.css">
+    <link id="color-theme" rel="stylesheet" href="/css/dark.css">
+    <link rel="stylesheet" href="/css/app.css">
+    <link rel="stylesheet" href="nomic.css">
+    <title>Nomic</title>
+</head>
+<body>
+    <div id="login-container" class="container" style="display: none;">
+        <div class="row">
+            <div id="sigil" class="offset-3 col-6 col-md-4 offset-md-4"><img width="100%" src="/img/main.png"></div>
+        </div>
+        <div class="row">
+            <div class="offset-3 col-6 col-md-4 offset-md-4">
+                <input id="login-input" class="form-control" type="text" placeholder="LOGIN">
+                <br />
+                <input id="login-button" class="form-control" type="button" value="ENTER">
+            </div>
+        </div>
+    </div>
+    <div id="lounge-container" class="container" style="display: none;">
+        <div class="row" style="background-color: #333; border-radius: 1rem 1rem 0 0;">
+            <div class="col-8">
+                <div id="profile-wrapper">
+                    <div id="profile-avatar" data-toggle="modal" data-target="#change-avatar-modal"><div id="profile-bgc"><div id="profile-body" class="body"><div id="profile-head" class="head"></div></div></div></div>
+                    <div id="profile-log-state">
+                        <span id="profile-username"></span><span id="profile-tripcode"></span>
+                        <br />
+                        <span id="logout-button">Logout</span>
+                    </div>
+                </div>
+            </div>
+            <div class="col-4">
+                <div id="search-wrapper">
+                    <div style="width: 100%;">
+                        <input id="search-input" class="form-control" type="text" placeholder="SEARCH">
+                        <input id="create-room-button" class="form-control" type="button" value="CREATE ROOM" data-toggle="modal" data-target="#create-room-modal" />
+                    </div> 
+                </div>
+            </div>
+        </div>
+        <div id="lounge-rows"></div>
+        <div id="lounge-footer" class="row"></div>
+    </div>
+
+    <div id="room-display" style="display: none;">
+        <div id="room-container" class="container">
+            <div id="messages-container">&nbsp;</div>
+        </div>
+        <div id="footer-room">
+            <div class="container">
+                <div class="row">
+                    <div class="col-md-6 offset-md-3">
+                        <textarea id="room-input" class="form-control" placeholder="WRITE MESSAGE" maxlength="300"></textarea>
+                    </div>
+                </div>
+                <div class="row">
+                    <div class="col-12">
+                        <input id="room-submit" class="form-control" type="button" value="POST">
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+
+    <div class="modal fade" id="create-room-modal" tabindex="-1" aria-labelledby="create-room-modal-label" aria-hidden="true">
+        <div class="modal-dialog">
+          <div class="modal-content">
+            <div class="modal-header">
+              <h5 class="modal-title" id="create-room-modal-label">CREATING ROOM</h5>
+              <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                <span aria-hidden="true">&times;</span>
+              </button>
+            </div>
+            <div class="modal-body">
+                <div class="input-group">
+                    <input id="create-room-name" type="text" class="form-control" placeholder="ROOM NAME" />
+                    <div class="input-group-append">
+                        <select class="custom-select">
+                            <option>2</option>
+                            <option>3</option>
+                            <option>4</option>
+                            <option selected>5</option>
+                            <option>6</option>
+                            <option>7</option>
+                            <option>8</option>
+                            <option>9</option>
+                            <option>10</option>
+                            <option>11</option>
+                            <option>12</option>
+                            <option>13</option>
+                            <option>14</option>
+                            <option>15</option>
+                            <option>16</option>
+                            <option>17</option>
+                            <option>18</option>
+                            <option>19</option>
+                            <option>20</option>
+                        </select>
+                    </div>
+                </div>
+            </div>
+            <div class="modal-footer">
+              <button id="create-room-submit" type="button" class="form-control">CREATE</button>
+            </div>
+          </div>
+        </div>
+    </div>
+
+    <div class="modal fade" id="change-avatar-modal" tabindex="-1" aria-labelledby="change-avatar-modal-label" aria-hidden="true">
+        <div class="modal-dialog">
+          <div class="modal-content">
+            <div class="modal-header">
+                <div id="choice-avatar">
+                    <div id="choice-avatar-bgc">
+                        <div id="choice-avatar-body" class="body">
+                            <div id="choice-avatar-head" class="head"></div>
+                        </div>
+                    </div>
+                </div>
+                <h5 class="modal-title" id="change-modal-label">CHANGING AVATAR</h5>
+                <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                    <span aria-hidden="true">&times;</span>
+                </button>
+            </div>
+            <div class="modal-body">
+                <div class="select-head" data="head-1"><div class="head head-1"></div></div>
+                <div class="select-head" data="head-2"><div class="head head-2"></div></div>
+                <div class="select-head" data="head-3"><div class="head head-3"></div></div>
+                <div class="select-head" data="head-4"><div class="head head-4"></div></div>
+                <div class="select-head" data="head-5"><div class="head head-5"></div></div>
+                <div class="select-head" data="head-6"><div class="head head-6"></div></div>
+                <div class="select-head" data="head-7"><div class="head head-7"></div></div>
+                <div class="select-head" data="head-8"><div class="head head-8"></div></div>
+                <div class="select-head" data="head-9"><div class="head head-9"></div></div>
+                <div class="select-head" data="head-10"><div class="head head-10"></div></div>
+                <hr />
+                <div class="select-body" data="body-1"><div class="body body-1"></div></div>
+                <div class="select-body" data="body-2"><div class="body body-2"></div></div>
+                <div class="select-body" data="body-3"><div class="body body-3"></div></div>
+                <div class="select-body" data="body-4"><div class="body body-4"></div></div>
+                <div class="select-body" data="body-5"><div class="body body-5"></div></div>
+                <div class="select-body" data="body-6"><div class="body body-6"></div></div>
+                <div class="select-body" data="body-7"><div class="body body-7"></div></div>
+                <div class="select-body" data="body-8"><div class="body body-8"></div></div>
+                <div class="select-body" data="body-9"><div class="body body-9"></div></div>
+                <div class="select-body" data="body-10"><div class="body body-10"></div></div>
+                <hr />
+                <div class="select-bgc" data="bgc-1"><div class="bgc bgc-1"></div></div>
+                <div class="select-bgc" data="bgc-2"><div class="bgc bgc-2"></div></div>
+                <div class="select-bgc" data="bgc-3"><div class="bgc bgc-3"></div></div>
+                <div class="select-bgc" data="bgc-4"><div class="bgc bgc-4"></div></div>
+                <div class="select-bgc" data="bgc-5"><div class="bgc bgc-5"></div></div>
+                <div class="select-bgc" data="bgc-6"><div class="bgc bgc-6"></div></div>
+                <div class="select-bgc" data="bgc-7"><div class="bgc bgc-7"></div></div>
+                <div class="select-bgc" data="bgc-8"><div class="bgc bgc-8"></div></div>
+                <div class="select-bgc" data="bgc-9"><div class="bgc bgc-9"></div></div>
+                <div class="select-bgc" data="bgc-10"><div class="bgc bgc-10"></div></div>
+            </div>
+            <div class="modal-footer">
+              <button id="change-avatar-submit" type="button" class="form-control">SAVE</button>
+            </div>
+          </div>
+        </div>
+    </div>
+
+    <script src="/js/jquery-3.2.1.min.js"></script>
+    <script src="/js/bootstrap.min.js"></script>
+    <script src="nomic.js"></script>
+</body>
+</html>

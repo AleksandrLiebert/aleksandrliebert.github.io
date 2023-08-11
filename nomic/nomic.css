@@ -1,0 +1,481 @@
+@import url('https://fonts.googleapis.com/css2?family=Roboto+Condensed&display=swap');
+
+body {
+    font-family: 'Roboto Condensed', sans-serif;
+}
+
+#login-input {
+    background-color: #333;
+    text-align: center;
+    color: var(--text);
+    font-size: 1.2rem;
+    border-radius: 1rem;
+    border-color: #444;
+}
+
+#login-button {
+    background-color: #999;
+    color: #333;
+    border-radius: 1rem;
+    border-color: #444;
+}
+
+#login-button:hover {
+    background-color: #aaa;
+}
+
+#login-button:active {
+    background-color: #777;
+}
+
+#profile-avatar {
+    border-radius: 1rem;
+    border-style: solid;
+    border-width: 0.4rem;
+    border-color: #fff;
+    background-color: #fff;
+    width: 5rem;
+    height: 5rem;
+    margin-top: 1rem;
+    margin-bottom: 1rem;
+    display: inline-block;
+    cursor: pointer;
+}
+
+#profile-log-state {
+    vertical-align: middle;
+    display: inline-block;
+    margin-left: 1rem;
+}
+
+#profile-wrapper {
+    display: flex;
+    align-items: center;
+    width: 100%;
+}
+
+#logout-button {
+    cursor: pointer;
+}
+
+#logout-button:hover {
+    color: #fff;
+}
+
+#search-wrapper, #create-room-wrapper {
+    display: flex;
+    align-items: center;
+    width: 100%;
+    height: 7rem;
+}
+
+#search-input {
+    vertical-align: middle;
+    border-radius: 1rem;
+}
+
+#create-room-button {
+    background-color: #999;
+    color: #333;
+    border-radius: 1rem;
+    border-color: #444;
+    margin-top: 0.5rem;
+}
+
+#create-room-button:hover {
+    background-color: #aaa;
+}
+
+#create-room-button:active {
+    background-color: #777;
+}
+
+#lounge-footer {
+    height: 3rem;
+    border-radius: 0 0 1rem 1rem;
+    background-color: #333;
+}
+
+.lounge-row {
+    background-color: #fff;
+    cursor: pointer;
+    color: #555;
+}
+
+.lounge-row:hover {
+    background-color: #eee;
+}
+
+.lounge-row:active {
+    background-color: #ddd;
+}
+
+.progress {
+    position: relative;
+}
+
+.progress-values {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    color: #fff;
+}
+
+.head-1 {
+    background-image: url('/nomic/avatars/head-1.png');
+}
+
+.head-2 {
+    background-image: url('/nomic/avatars/head-2.png');
+}
+
+.head-3 {
+    background-image: url('/nomic/avatars/head-3.png');
+}
+
+.head-4 {
+    background-image: url('/nomic/avatars/head-4.png');
+}
+
+.head-5 {
+    background-image: url('/nomic/avatars/head-5.png');
+}
+
+.head-6 {
+    background-image: url('/nomic/avatars/head-6.png');
+}
+
+.head-7 {
+    background-image: url('/nomic/avatars/head-7.png');
+}
+
+.head-8 {
+    background-image: url('/nomic/avatars/head-8.png');
+}
+
+.head-9 {
+    background-image: url('/nomic/avatars/head-9.png');
+}
+
+.head-10 {
+    background-image: url('/nomic/avatars/head-10.png');
+}
+
+.body-1 {
+    background-image: url('/nomic/avatars/body-1.png');
+}
+
+.body-2 {
+    background-image: url('/nomic/avatars/body-2.png');
+}
+
+.body-3 {
+    background-image: url('/nomic/avatars/body-3.png');
+}
+
+.body-4 {
+    background-image: url('/nomic/avatars/body-4.png');
+}
+
+.body-5 {
+    background-image: url('/nomic/avatars/body-5.png');
+}
+
+.body-6 {
+    background-image: url('/nomic/avatars/body-6.png');
+}
+
+.body-7 {
+    background-image: url('/nomic/avatars/body-7.png');
+}
+
+.body-8 {
+    background-image: url('/nomic/avatars/body-8.png');
+}
+
+.body-9 {
+    background-image: url('/nomic/avatars/body-9.png');
+}
+
+.body-10 {
+    background-image: url('/nomic/avatars/body-10.png');
+}
+
+.bgc-1 {
+    background-color: #000;
+}
+
+.bgc-2 {
+    background-color: #8EC3F4;
+}
+
+.bgc-3 {
+    background-color: #96DD4B;
+}
+
+.bgc-4 {
+    background-color: #6BA061;
+}
+
+.bgc-5 {
+    background-color: #883AA7;
+}
+
+.bgc-6 {
+    background-color: #78713A;
+}
+
+.bgc-7 {
+    background-color: #F0A93B;
+}
+
+.bgc-8 {
+    background-color: #9D2C23;
+}
+
+.bgc-9 {
+    background-color: #C16899;
+}
+
+.bgc-10 {
+    background-color: #5554A2;
+}
+
+#profile-bgc, #profile-head, #profile-body {
+    width: 100%;
+    height: 100%;
+    content: '&nbsp;';
+    border-radius: 0.7rem;
+}
+
+.head {
+    width: 100%;
+    height: 100%;
+    background-size: contain;
+    content: '&nbsp;';
+}
+
+.body {
+    width: 100%;
+    height: 100%;
+    background-size: contain;
+    content: '&nbsp;';
+}
+
+.bgc {
+    width: 100%;
+    height: 100%;
+    content: '&nbsp;';
+    border-radius: 0.7rem;
+}
+
+.custom-select {
+    border-radius: 0 0.25rem 0.25rem 0;
+    padding-left: 1.5rem;
+    padding-right: 2.5rem;
+}
+
+.modal-header {
+    align-items: center;
+    display: flex;
+}
+
+.modal-title {
+    color: #444;
+}
+
+.modal-footer {
+    justify-content: baseline;
+}
+
+#create-room-submit {
+    margin: auto;
+    border-radius: 1rem;
+    width: 10rem;
+}
+
+#create-room-submit:hover {
+    background-color: #6b6;
+    color: #fff;
+}
+
+#create-room-submit:active {
+    background-color: #484;
+}
+
+#change-avatar-submit {
+    margin: auto;
+    border-radius: 1rem;
+    width: 10rem;
+}
+
+#change-avatar-submit:hover {
+    background-color: #6b6;
+    color: #fff;
+}
+
+#change-avatar-submit:active {
+    background-color: #484;
+}
+
+.select-head, .select-body, .select-bgc {
+    width: 5rem;
+    height: 5rem;
+    cursor: pointer;
+    background-color: #000;
+    border-radius: 0.7rem;
+    margin: 0.25rem;
+    display: inline-block;
+}
+
+.select-bgc {
+    background-color: transparent;
+}
+
+.selected-head, .selected-body, .selected-bgc {
+    outline: 0.25rem solid #6b6;
+}
+
+#choice-avatar {
+    width: 5rem;
+    height: 5rem;
+    margin-right: 1rem;
+}
+
+#profile-tripcode {
+    color: #666;
+}
+
+#footer-room {
+    background-color: rgba(128, 128, 128, 0.5);
+    position: absolute;
+    left: 0;
+    bottom: 0;
+    right: 0;
+    height: 7rem;
+}
+
+#room-display {
+    height: 100%;
+    width: 100%;
+    position: absolute;
+}
+
+#room-container {
+    height: calc(100% - 7rem);
+}
+
+#room-input {
+    margin-top: 0.5rem;
+    resize: none;
+}
+
+#room-submit {
+    height: 1.5rem;
+    border-radius: 1rem;
+    width: 10rem;
+    padding: 0;
+    margin-top: 0.5rem;
+    margin-left: auto;
+    margin-right: auto;
+    background-color: #666;
+    color: #fff;
+}
+
+#room-submit:hover {
+    background-color: #6b6;
+    color: #fff;
+}
+
+#room-submit:active {
+    background-color: #484;
+}
+
+#messages-container {
+    overflow-y: auto;
+    display: flex;
+    flex-direction: column-reverse;
+    position: relative;
+    width: 100%;
+    margin: auto;
+    height: 100%;
+    overflow-x: hidden;
+}
+
+.message-head {
+    width: 100%;
+    height: 100%;
+}
+
+.message-body {
+    width: 100%;
+    height: 100%;
+}
+
+.message-bgc {
+    width: 4rem;
+    height: 4rem;
+    border-width: 0.25rem;
+    border-color: #fff;
+    border-style: solid;
+    display: inline-block;
+}
+
+.message-username {
+    margin-top: 0.5rem;
+    display: inline-block;
+}
+
+.message {
+    padding-top: 1rem;
+}
+
+.message-text {
+    border-color: #fff;
+    border-radius: 1rem;
+    border-style: solid;
+    padding: 1rem;
+    display: inline-block;
+    color: #fff;
+}
+
+.message-text-bgc-1 {
+    background: linear-gradient(to bottom,#cec5c3 0,#a39a9c 50%,#857981 51%,#797175 100%);
+}
+
+.message-text-bgc-2 {
+    background: linear-gradient(to bottom,#a9cbe8 0,#689acc 50%,#497abe 51%,#426caf 100%);
+}
+
+.message-text-bgc-3 {
+    background: linear-gradient(to bottom,#acf26a 0,#57c22a 50%,#42aa2d 51%,#4fb32e 100%);
+}
+
+.message-text-bgc-4 {
+    background: linear-gradient(to bottom,#88daaf 0,#6baf55 50%,#369736 51%,#4fa166 100%);
+}
+
+.message-text-bgc-5 {
+    background: linear-gradient(to bottom,#c186d0 0,#a34cc1 50%,#8c34ac 51%,#7f339a 100%);
+}
+
+.message-text-bgc-6 {
+    background: linear-gradient(to bottom,#dbd392 0,#b1a75a 50%,#998145 51%,#979144 100%);
+}
+
+.message-text-bgc-7 {
+    background: linear-gradient(to bottom,#fad34b 0,#f99d35 50%,#dc721b 51%,#f9831e 100%);
+}
+
+.message-text-bgc-8 {
+    background: linear-gradient(to bottom,#d1727a 0,#a52526 50%,#970d03 51%,#a7140c 100%);
+}
+
+.message-text-bgc-9 {
+    background: linear-gradient(to bottom,#e896b7 0,#c96294 50%,#b73e72 51%,#af497c 100%);
+}
+
+.message-text-bgc-10 {
+    background: linear-gradient(to bottom,#5d62ac 0,#5b62a7 50%,#2021a5 51%,#1e22a4 100%);
+}
