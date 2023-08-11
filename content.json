@@ -64,7 +64,7 @@
   },
   "beauty" : {
     "name": "Красота",
-    "links": ["confirmation-bias"]
+    "links": ["confirmation-bias", "context"]
   },
   "conflict": {
     "name": "Конфликт"
@@ -156,5 +156,8 @@
   "confirmation-bias": {
     "name": "Избегание когнитивного диссонанса",
     "edit": "https://docs.google.com/document/d/1Zp0YYmRjgQKHRyFQ3mhgrWCE-C1mjaH9bUvFD96NV-c/edit?usp=sharing"
+  },
+  "context": {
+    "name": "Контекст"
   }
 }
