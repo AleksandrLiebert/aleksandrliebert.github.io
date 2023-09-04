@@ -1,5 +1,17 @@
+@import url('https://fonts.googleapis.com/css2?family=Neucha&display=swap');
+:root {
+    --font: 'Neucha', sans-serif;
+    --text: #AC782A;
+    --fon-header: #EAC76F;
+    --fon: #FFE7AB;
+}
+
+
 body {
-	background-color: var(--fon);
+  background-image: url(/img/background.jpg);
+  /* background-repeat: no-repeat; */
+  /* background-attachment: fixed; */
+  /* background-size: cover; */
   font-family: var(--font);
   color: var(--text);
   font-size: 1.2rem;
@@ -10,7 +22,7 @@ h1, h2, h3, h4, h5, h6 {
 }
 
 hr {
-	border-top: 1px solid var(--text);
+	border-top: 2px solid var(--text);
 	margin-top: 0.5rem;
 	margin-bottom: 0.5rem;
 }
@@ -169,7 +181,7 @@ input[type="radio"] {
   }
 
   #sigil {
-    margin-top: 4rem;
+    /* margin-top: 4rem; */
   }
 }
 

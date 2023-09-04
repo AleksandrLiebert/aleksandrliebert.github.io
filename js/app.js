@@ -22,9 +22,9 @@ function setCategory(id){
       $('#sigil').html('<img src="img/' + id + '.png" width="100%">')
       $('.title').text(category.name)
       if (category['edit'] != null){
-        $('#edit-button').attr('href', category.edit)
-        $('#edit-button').removeClass('content-button-dissable')
-        $('#edit-button-img').attr('src', '/img/edit-icon.png')
+        // $('#edit-button').attr('href', category.edit)
+        // $('#edit-button').removeClass('content-button-dissable')
+        // $('#edit-button-img').attr('src', '/img/edit-icon.png')
       } else {
         $('#edit-button').addClass('content-button-dissable')
         $('#edit-button-img').attr('src', '/img/transparent-bg.png')
@@ -160,29 +160,7 @@ function resizeWindow() {
   }
 }
 
-function reloadColorSchema() {
-  if (localStorage.getItem('color-schema') == 'dark') {
-    $('#color-theme').first().attr('href', 'css/dark.css')
-    $('#color-schema-button-img').attr('src', 'img/sun-icon.png')
-  } else {
-    $('#color-theme').first().attr('href', 'css/light.css')
-    $('#color-schema-button-img').attr('src', 'img/moon-icon.png')
-  }
-}
-
-function switchColorSchema() {
-  if (localStorage.getItem('color-schema') == 'dark') {
-    localStorage.setItem('color-schema', 'light')
-  } else {
-    localStorage.setItem('color-schema', 'dark')
-  }
-  reloadColorSchema()
-}
-
-$('#switch-color-schema').click(switchColorSchema)
-
 $(window).resize(resizeWindow)
-reloadColorSchema()
 
 let testData = null
 let currentQuestion = null

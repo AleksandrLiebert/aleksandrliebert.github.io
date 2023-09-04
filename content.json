@@ -64,7 +64,7 @@
   },
   "beauty" : {
     "name": "Красота",
-    "links": ["confirmation-bias", "context"]
+    "links": ["confirmation-bias", "context", "memory"]
   },
   "conflict": {
     "name": "Конфликт"
@@ -159,5 +159,8 @@
   },
   "context": {
     "name": "Контекст"
+  },
+  "memory": {
+    "name": "Память"
   }
 }
