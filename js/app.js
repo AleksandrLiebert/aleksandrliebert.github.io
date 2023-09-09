@@ -10,7 +10,11 @@ function setCategory(id){
     url: 'content/' + id + '.md',
     type: 'get',
     error: function(XMLHttpRequest, textStatus, errorThrown){
-      $('#sigil').html('<img src="img/' + id + '.png" width="100%">')
+      if (id == 'main') {
+        $('#sigil').html('<img src="img/' + id + '.png" width="100%">')
+      } else {
+        $('#sigil').html('')
+      }
       $('.title').text(category.name)
 
        $('#content').text('Контент в разработке')
@@ -19,7 +23,11 @@ function setCategory(id){
        setTitle('Not Found')
     },
     success: function(data){
-      $('#sigil').html('<img src="img/' + id + '.png" width="100%">')
+      if (id == 'main') {
+        $('#sigil').html('<img src="img/' + id + '.png" width="100%">')
+      } else {
+        $('#sigil').html('')
+      }
       $('.title').text(category.name)
       if (category['edit'] != null){
         // $('#edit-button').attr('href', category.edit)
@@ -66,7 +74,7 @@ function addContent(c, shift, last) {
       }
   }
 
-    res += '<a class="content content-c" data="' + c + '" href="?c=' + c + '"><img class="d-inline-block" src="img/mini-icon/' + c  + '.png" style="cursor: pointer; width: 2.5rem; height: 2.5rem; margin-right: 0.5rem;"><div class="content-row-text">'  + value.name + '</div></a>'
+    res += '<a class="content content-c" data="' + c + '" href="?c=' + c + '"><div class="content-row-text">&nbsp;'  + value.name + '</div></a>'
     res += '</div>'
     for (var i in value.links) {
         if (last !== undefined) {
