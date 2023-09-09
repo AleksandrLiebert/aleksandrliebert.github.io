@@ -1,17 +1,14 @@
-@import url('https://fonts.googleapis.com/css2?family=Neucha&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Nunito&display=swap');
 :root {
-    --font: 'Neucha', sans-serif;
-    --text: #AC782A;
-    --fon-header: #EAC76F;
-    --fon: #FFE7AB;
+  --font: 'Nunito', sans-serif;
+  --text: #5882C7;
+  --fon-header: #EAC76F;
+  --fon: #E2E9F5;
 }
 
 
 body {
-  background-image: url(/img/background.jpg);
-  /* background-repeat: no-repeat; */
-  /* background-attachment: fixed; */
-  /* background-size: cover; */
+  background-color: var(--fon);
   font-family: var(--font);
   color: var(--text);
   font-size: 1.2rem;
