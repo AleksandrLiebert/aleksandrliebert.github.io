@@ -60,7 +60,7 @@
   },
   "safety": {
     "name": "Безопасность",
-    "links": ["healt", "emergency"]
+    "links": ["healt"]
   },
   "beauty" : {
     "name": "Красота",
@@ -76,9 +76,9 @@
     "name": "Отношения"
   },
   "development": {
-    "name": "Развитие",
+    "name": "Статус",
     "edit": "https://docs.google.com/document/d/1sKtYWA8wtdSpe8Z3FW6V8a0g32cRkHlrbwnq8DzxNe8/edit?usp=sharing",
-    "links": ["principle", "experience", "power"]
+    "links": ["principle", "power"]
   },
   "adventure": {
     "name": "Приключение",
@@ -113,9 +113,6 @@
   "money": {
     "name": "Деньги"
   },
-  "experience": {
-    "name": "Самообучение"
-  },
   "seduction": {
     "name": "Соблазнение"
   },
@@ -147,14 +144,11 @@
   "submission": {
     "name": "Подчинение"
   },
-  "emergency": {
-    "name": "Чрезвычайные ситуации"
-  },
   "base-test": {
     "name": "Вводный тест"
   },
   "confirmation-bias": {
-    "name": "Избегание когнитивного диссонанса",
+    "name": "Самообман",
     "edit": "https://docs.google.com/document/d/1Zp0YYmRjgQKHRyFQ3mhgrWCE-C1mjaH9bUvFD96NV-c/edit?usp=sharing"
   },
   "context": {
