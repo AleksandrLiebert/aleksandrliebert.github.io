@@ -1,6 +1,9 @@
-@import url('https://fonts.googleapis.com/css2?family=EB+Garamond&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Comfortaa&family=EB+Garamond&family=Sofia+Sans+Condensed:wght@300;500&display=swap');
 :root {
-  --font: 'EB Garamond', sans-serif;
+  --font: 'Sofia Sans Condensed', sans-serif;
+  --font-title: 'EB Garamond', serif;
+  --font-header: 'Comfortaa', sans-serif;
+  --font-bold: 'Sofia Sans Condensed', sans-serif;
   --text: #5882C7;
   --fon-header: #EAC76F;
   --fon: #E2E9F5;
@@ -11,10 +14,12 @@ body {
   background-color: var(--fon);
   font-family: var(--font);
   color: var(--text);
-  font-size: 1.2rem;
+  font-size: 1.3rem;
+  font-weight: 300;
 }
 
 h1, h2, h3, h4, h5, h6 {
+  font-family: var(--font-title);
 	text-align: center;
 }
 
@@ -37,6 +42,11 @@ blockquote {
 
 p {
   text-indent: 2rem;
+}
+
+strong {
+  font-family: var(--font-bold);
+  font-weight: 500;
 }
 
 textarea:focus,
@@ -63,6 +73,7 @@ select:focus,
 }
 
 .content {
+  font-family: var(--font-header);
 	font-size: 1.2rem;
 	color: var(--text);
 	padding-bottom: 6rem;
@@ -97,6 +108,10 @@ select:focus,
   display: inline-block;
   width:4rem;
   height:4rem;
+}
+
+.title {
+  font-family: var(--font-title);
 }
 
 .title-header-container {
