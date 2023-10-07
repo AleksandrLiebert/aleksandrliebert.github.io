@@ -1,62 +1,49 @@
 {
   "main": {
     "name": "Docendo Deus",
-    "links": ["happiness", "resource"],
-    "edit": "https://docs.google.com/document/d/1ydZn63--bP3S1pL68zDkcEvU1OaVBOYo8GyPy68aLJ8/edit?usp=sharing"
+    "links": ["happiness", "resource"]
   },
   "principle": {
-    "name": "Принципы",
-    "edit": "https://docs.google.com/document/d/1LW4aYBLR2ZaQJBafXTS533SJNW6SHw4ReeR_1NdtLzw/edit?usp=sharing"
+    "name": "Принципы"
   },
   "truth": {
     "name": "Истина",
-    "links": ["absolute-truth", "relative-truth", "science-truth"],
-    "edit": "https://docs.google.com/document/d/1e8zdfoEu_nT4-plEV5P9KAFxoK9yiMxQp0paA439S0Q/edit?usp=sharing"
+    "links": ["absolute-truth", "relative-truth", "science-truth"]
   },
   "absolute-truth": {
-    "name": "Абсолютная истина",
-    "edit": "https://docs.google.com/document/d/1e8zdfoEu_nT4-plEV5P9KAFxoK9yiMxQp0paA439S0Q/edit?usp=sharing"
+    "name": "Абсолютная истина"
   },
   "relative-truth": {
-    "name": "Относительная истина",
-    "edit": "https://docs.google.com/document/d/1e8zdfoEu_nT4-plEV5P9KAFxoK9yiMxQp0paA439S0Q/edit?usp=sharing"
+    "name": "Относительная истина"
   },
   "science-truth": {
-    "name": "Научная истина",
-    "edit": "https://docs.google.com/document/d/1e8zdfoEu_nT4-plEV5P9KAFxoK9yiMxQp0paA439S0Q/edit?usp=sharing"
+    "name": "Научная истина"
   },
   "consciousness": {
-    "name": "Сознание",
-    "edit": "https://docs.google.com/document/d/1ynVY82H3aDlo0SNqmo52uuMvRqBIcBIOiJ6fWwPKWAo/edit?usp=sharing"
+    "name": "Сознание"
   },
   "resource": {
     "name": "Ресурс"
   },
   "happiness": {
     "name": "Счастье",
-    "links": ["harmony", "relations", "safety", "development", "adventure", "freedom", "beauty", "faith"],
-    "edit": "https://docs.google.com/document/d/1x4wDY95LlbjkhkwH_SQqs1Wh4I699bRSM9oRs-mxJ8U/edit?usp=sharing"
+    "links": ["faith", "harmony", "relations", "safety", "development", "adventure", "freedom", "beauty"]
   },
   "harmony": {
     "name": "Гармония",
-    "links": ["meditation", "self-control", "reflection", "genuine"],
-    "edit": "https://docs.google.com/document/d/1a3oFj28ty3Si9UB9CcvvfgL2UcXdx4cNtxOSjPYgvik/edit?usp=sharing"
+    "links": ["meditation", "self-control", "reflection", "genuine"]
   },
   "meditation": {
-    "name": "Медитация",
-    "edit": "https://docs.google.com/document/d/1a3oFj28ty3Si9UB9CcvvfgL2UcXdx4cNtxOSjPYgvik/edit?usp=sharing"
+    "name": "Медитация"
   },
   "self-control": {
-    "name": "Самообладание",
-    "edit": "https://docs.google.com/document/d/1a3oFj28ty3Si9UB9CcvvfgL2UcXdx4cNtxOSjPYgvik/edit?usp=sharing"
+    "name": "Самообладание"
   },
   "reflection": {
-    "name": "Рефлексия",
-    "edit": "https://docs.google.com/document/d/1a3oFj28ty3Si9UB9CcvvfgL2UcXdx4cNtxOSjPYgvik/edit?usp=sharing"
+    "name": "Рефлексия"
   },
   "genuine": {
-    "name": "Подлинное",
-    "edit": "https://docs.google.com/document/d/1a3oFj28ty3Si9UB9CcvvfgL2UcXdx4cNtxOSjPYgvik/edit?usp=sharing"
+    "name": "Подлинное"
   },
   "safety": {
     "name": "Безопасность",
@@ -77,8 +64,7 @@
   },
   "development": {
     "name": "Статус",
-    "edit": "https://docs.google.com/document/d/1sKtYWA8wtdSpe8Z3FW6V8a0g32cRkHlrbwnq8DzxNe8/edit?usp=sharing",
-    "links": ["principle", "power"]
+    "links": ["physical-force", "strategies", "sexuality", "money", "technology", "ideology", "law", "submission"]
   },
   "adventure": {
     "name": "Приключение",
@@ -86,19 +72,14 @@
   },
   "freedom": {
     "name": "Свобода",
-    "edit": "https://docs.google.com/document/d/1rLYnJYqHMczEAYBs9dt79K1Xs0Hmiqnc3GOF8xtbCF4/edit?usp=sharing",
     "links": ["time"]
   },
   "faith": {
     "name": "Вера",
-    "links": ["truth", "consciousness", "being", "morality", "grand-design", "rituals"]
+    "links": ["truth", "consciousness", "being", "principle", "morality", "grand-design", "rituals"]
   },
   "healt": {
     "name": "Здоровье"
-  },
-  "power": {
-    "name": "Власть",
-    "links": ["physical-force", "strategies", "sexuality", "money", "technology", "ideology", "law", "submission"]
   },
   "sexuality": {
     "name": "Сексуальность"
@@ -107,8 +88,7 @@
     "name": "Время"
   },
   "possibility": {
-    "name": "Возможности",
-    "edit": "https://docs.google.com/document/d/1Z7dgz7iclktllD1Phw-55azQlkcORNYdJmblsBJlfpQ/edit?usp=sharing"
+    "name": "Возможности"
   },
   "money": {
     "name": "Деньги"
@@ -120,8 +100,7 @@
     "name": "Мораль"
   },
   "being": {
-    "name": "Бытие",
-    "edit": "https://docs.google.com/document/d/1oKvqWoLsU_R2aEm8zECsxK_mSLXDJ-JAzq61NjGh1-U/edit?usp=sharing"
+    "name": "Бытие"
   },
   "grand-design": {
     "name": "Высший замысел"
@@ -148,8 +127,7 @@
     "name": "Вводный тест"
   },
   "confirmation-bias": {
-    "name": "Самообман",
-    "edit": "https://docs.google.com/document/d/1Zp0YYmRjgQKHRyFQ3mhgrWCE-C1mjaH9bUvFD96NV-c/edit?usp=sharing"
+    "name": "Самообман"
   },
   "context": {
     "name": "Контекст"
