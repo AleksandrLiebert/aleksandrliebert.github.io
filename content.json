@@ -51,7 +51,7 @@
   },
   "beauty" : {
     "name": "Красота",
-    "links": ["confirmation-bias", "context", "memory", "stereotypes"]
+    "links": ["confirmation-bias", "context", "memory", "stereotypes", "arrogance"]
   },
   "conflict": {
     "name": "Конфликт"
@@ -137,5 +137,8 @@
   },
   "stereotypes": {
     "name": "Стереотипы"
+  },
+  "arrogance": {
+    "name": "Высокомерие"
   }
 }
