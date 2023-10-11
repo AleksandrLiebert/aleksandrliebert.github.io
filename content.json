@@ -68,7 +68,7 @@
   },
   "adventure": {
     "name": "Приключение",
-    "links": ["possibility", "conflict", "seduction", "gamble"]
+    "links": ["possibility", "conflict", "seduction", "gamble", "games"]
   },
   "freedom": {
     "name": "Свобода",
@@ -143,5 +143,8 @@
   },
   "gamble": {
     "name": "Азарт"
+  },
+  "games": {
+    "name": "Игры"
   }
 }
