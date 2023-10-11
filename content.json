@@ -68,7 +68,7 @@
   },
   "adventure": {
     "name": "Приключение",
-    "links": ["possibility", "conflict", "seduction"]
+    "links": ["possibility", "conflict", "seduction", "gamble"]
   },
   "freedom": {
     "name": "Свобода",
@@ -140,5 +140,8 @@
   },
   "arrogance": {
     "name": "Высокомерие"
+  },
+  "gamble": {
+    "name": "Азарт"
   }
 }
