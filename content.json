@@ -51,7 +51,7 @@
   },
   "beauty" : {
     "name": "Красота",
-    "links": ["confirmation-bias", "context", "memory", "stereotypes", "conformism", "arrogance"]
+    "links": ["foxery", "context", "memory", "stereotypes", "conformism", "arrogance"]
   },
   "conflict": {
     "name": "Конфликт"
@@ -126,8 +126,8 @@
   "base-test": {
     "name": "Вводный тест"
   },
-  "confirmation-bias": {
-    "name": "Самообман"
+  "foxery": {
+    "name": "Изворотливость"
   },
   "context": {
     "name": "Контекст"
