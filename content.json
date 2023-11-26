@@ -14,7 +14,25 @@
     "name": "Абсолютная истина"
   },
   "relative-truth": {
-    "name": "Относительная истина"
+    "name": "Относительная истина",
+    "links": ["correspondence-truth", "conventional-truth", "coherent-truth", "pragmatic-truth"]
+  },
+  "correspondence-truth": {
+    "name": "Корреспондентская истина"
+  },
+  "conventional-truth": {
+    "name": "Конвенциональная истина",
+    "links": ["debates"]
+  },
+  "debates": {
+    "name": "Дебаты"
+  },
+  "coherent-truth": {
+    "name": "Когерентная истина",
+    "links": ["avoiding-contradictions", "conformism", "arrogance", "stereotypes", "memory", "context"]
+  },
+  "pragmatic-truth": {
+    "name": "Прагматическая истина"
   },
   "science-truth": {
     "name": "Научная истина"
@@ -27,7 +45,7 @@
   },
   "happiness": {
     "name": "Счастье",
-    "links": ["faith", "harmony", "relations", "safety", "development", "adventure", "freedom", "beauty"]
+    "links": ["faith", "harmony", "relations", "safety", "way", "adventure", "freedom", "aesthetics"]
   },
   "harmony": {
     "name": "Гармония",
@@ -49,22 +67,35 @@
     "name": "Безопасность",
     "links": ["healt"]
   },
-  "beauty" : {
-    "name": "Красота",
-    "links": ["foxery", "context", "memory", "stereotypes", "conformism", "arrogance"]
+  "aesthetics" : {
+    "name": "Эстетика",
+    "links": ["sexuality"]
   },
   "conflict": {
     "name": "Конфликт"
   },
-  "strategies": {
+  "willpower": {
     "name": "Сила воли"
   },
   "relations": {
-    "name": "Отношения"
+    "name": "Близость",
+    "links": ["sex", "love"]
   },
-  "development": {
-    "name": "Статус",
-    "links": ["physical-force", "strategies", "sexuality", "money", "technology", "ideology", "law", "submission"]
+  "love": {
+    "name": "Любовь"
+  },
+  "sex": {
+    "name": "Секс"
+  },
+  "way": {
+    "name": "Жизненный путь",
+    "links": ["willpower", "perfectionism", "belief-in-control"]
+  },
+  "perfectionism": {
+    "name": "Перфекционизм"
+  },
+  "belief-in-control": {
+    "name": "Вера в контроль"
   },
   "adventure": {
     "name": "Приключение",
@@ -72,11 +103,11 @@
   },
   "freedom": {
     "name": "Свобода",
-    "links": ["time"]
+    "links": ["time", "money"]
   },
   "faith": {
     "name": "Вера",
-    "links": ["truth", "consciousness", "being", "principle", "morality", "grand-design", "rituals"]
+    "links": ["truth", "consciousness", "being", "morality", "grand-design", "principle", "canons"]
   },
   "healt": {
     "name": "Здоровье"
@@ -126,8 +157,8 @@
   "base-test": {
     "name": "Вводный тест"
   },
-  "foxery": {
-    "name": "Изворотливость"
+  "avoiding-contradictions": {
+    "name": "Избегание противоречий"
   },
   "context": {
     "name": "Контекст"
@@ -149,5 +180,8 @@
   },
   "games": {
     "name": "Игры"
+  },
+  "canons": {
+    "name": "Каноны"
   }
 }

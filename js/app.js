@@ -57,19 +57,19 @@ function setCategory(id){
 
 function addContent(c, shift, last) {
     var value = content[c]
-    var res = '<div class="col-12 offset-md-2 col-md-10 text-left content-row">'
+    var res = '<div class="col-12 offset-md-3 col-md-6 text-left content-row" style="height: 2rem;">'
     for (var i = 0; i < shift; i++) {
       if (i + 1 !== shift) {
           if (last[i]) {
-              res += '<img class="d-inline-block" src="img/tree/space.png" style="width: 2.5rem; height: 2.5rem;" />'
+              res += '<img class="d-inline-block" src="img/tree/space.png" style="width: 1.5rem; height: 2rem;" />'
           } else {
-              res += '<img class="d-inline-block" src="img/tree/line.png" style="width: 2.5rem; height: 2.5rem;" />'
+              res += '<img class="d-inline-block" src="img/tree/line.png" style="width: 1.5rem; height: 2rem;" />'
           }
       } else {
           if (last[i]) {
-              res += '<img class="d-inline-block" src="img/tree/angle.png" style="width: 2.5rem; height: 2.5rem;" />'
+              res += '<img class="d-inline-block" src="img/tree/angle.png" style="width: 1.5rem; height: 2rem;" />'
           } else {
-              res += '<img class="d-inline-block" src="img/tree/branch.png" style="width: 2.5rem; height: 2.5rem;" />'
+              res += '<img class="d-inline-block" src="img/tree/branch.png" style="width: 1.5rem; height: 2rem;" />'
           }
       }
   }
@@ -93,11 +93,11 @@ function addContent(c, shift, last) {
 function setContent() {
   var res = ''
   res += '<div class="d-inline-block" style="height: 1rem;" class="row"></div><div class="row">'
-  res += '<div class="col-12 offset-md-2 col-md-10 text-left content-row">'
+  res += '<div class="col-12 offset-md-3 col-md-6 text-left content-row">'
   res += '<a class="content content-c" data="main" href="?c=main"><img class="d-inline-block" src="img/mini-icon/main.png" style="cursor: pointer; width: 2.5rem; height: 2.5rem; margin-right: 0.5rem;"><div class="content-row-text">Docendo Deus</div></a>'
   res += '</div>'
   res += addContent('happiness', 0)
-  res += '</div>'
+  res += '</div><div style="height: 3rem;">&nbsp;</div>'
   $('#contents').html(res)
   $('.content-c').click(function() {
     var id = this.getAttribute('data')

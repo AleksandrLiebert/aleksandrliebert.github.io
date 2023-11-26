@@ -1,9 +1,9 @@
-@import url('https://fonts.googleapis.com/css2?family=Comfortaa&family=EB+Garamond&family=Sofia+Sans+Condensed:wght@300;500&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Comfortaa&family=EB+Garamond&family=Philosopher:wght@400;700&display=swap');
 :root {
-  --font: 'Sofia Sans Condensed', sans-serif;
+  --font: 'Philosopher', sans-serif;
   --font-title: 'EB Garamond', serif;
   --font-header: 'Comfortaa', sans-serif;
-  --font-bold: 'Sofia Sans Condensed', sans-serif;
+  --font-bold: 'Philosopher', sans-serif;
   --text: #565656;
   --fon-header: #EAC76F;
   --fon: #e0e0e0;
@@ -15,7 +15,7 @@ body {
   font-family: var(--font);
   color: var(--text);
   font-size: 1.3rem;
-  font-weight: 300;
+  font-weight: 400;
 }
 
 h1, h2, h3, h4, h5, h6 {
@@ -46,7 +46,8 @@ p {
 
 strong {
   font-family: var(--font-bold);
-  font-weight: 500;
+  font-weight: 700;
+  color: #454545;
 }
 
 textarea:focus,
@@ -76,7 +77,6 @@ select:focus,
   font-family: var(--font-header);
 	font-size: 1.2rem;
 	color: var(--text);
-	padding-bottom: 6rem;
   cursor: pointer;
 }
 
@@ -172,6 +172,7 @@ select:focus,
 
 .content-row-text {
   display: inline-block;
+  font-size: 1rem;
 }
 
 label {
