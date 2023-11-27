@@ -190,10 +190,35 @@ input[type="radio"] {
   cursor: pointer;
 }
 
+#content-title {
+  top: auto;
+  left: 0;
+  bottom: 0;
+  position: fixed;
+  background-color: #D4D4D4;
+  width: 100%;
+  z-index: 1;
+}
+
+.shift-for-titile {
+  height: 0;
+  width: 100%;
+  display: inline-block;
+}
+
 @media (min-width: 576px) {
   .header {
     top: 0;
     bottom: auto;
+  }
+
+  #content-title {
+    top: 0;
+    bottom: auto;
+  }
+
+  .shift-for-titile {
+    height: 4rem;
   }
 
   #sigil {
@@ -202,7 +227,7 @@ input[type="radio"] {
 }
 
 @media (min-width: 768px) {
-
+  
 }
 
 @media (min-width: 992px) {
