@@ -17,9 +17,6 @@ body {
   font-family: AppFont;
 }
 
-.field {
-}
-
 .block {
   background: transparent;
   display: inline-block;
@@ -88,7 +85,7 @@ body {
   background-size: cover;
 }
 
-.score {
+#score {
   background: rgba(0, 0, 0, 0.5);
   position: absolute;
   right: 0;
