@@ -731,6 +731,7 @@ function afterEndGame() {
 	document.getElementById('panels').classList.remove('hide')
 	document.getElementById('game').classList.remove('blur')
 	document.getElementById('game-over').classList.add('hide')
+	createSeed()
 	startGame()
 }
 
