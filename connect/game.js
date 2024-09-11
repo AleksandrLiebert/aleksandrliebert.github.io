@@ -1,4 +1,5 @@
 const UP = 0, RIGHT = 1, DOWN = 2, LEFT = 3
+let keyLIsDown = false
 let blockSize = 100
 let fieldSize = 9
 let serverX = 4
@@ -311,7 +312,18 @@ function blockClick(handle) {
 	if (turnsList.length > 0) {
 		lastTurn = turnsList[turnsList.length - 1]
 	}
-	if (handle.button == 0 && !this.classList.contains('block-lock') && !this.classList.contains('block-hint-lock') && this.getAttribute('connector') != '0000') {
+	if (handle.button == 1 || keyLIsDown && handle.button == 0) {
+		if (lastTurn[0] == this.id && lastTurn[1] == 1) {
+			turnsList.pop()
+		} else {
+			turnsList.push([this.id, 1])
+		}
+		if (this.classList.contains('block-lock')) {
+			this.classList.remove('block-lock')
+		} else {
+			this.classList.add('block-lock')
+		}
+	} else if (handle.button == 0 && !this.classList.contains('block-lock') && !this.classList.contains('block-hint-lock') && this.getAttribute('connector') != '0000') {
 		if (hintActive) {
 			hintState(false)
 			let original = this.getAttribute('original-connector')
@@ -372,17 +384,6 @@ function blockClick(handle) {
 		fillField(serverX, serverY)
 		drawConnect()
 		drawTurns()
-	} else if (handle.button == 1) {
-		if (lastTurn[0] == this.id && lastTurn[1] == 1) {
-			turnsList.pop()
-		} else {
-			turnsList.push([this.id, 1])
-		}
-		if (this.classList.contains('block-lock')) {
-			this.classList.remove('block-lock')
-		} else {
-			this.classList.add('block-lock')
-		}
 	}
 }
 
@@ -797,7 +798,13 @@ function setEvents() {
 	document.getElementById('pause').onclick = pauseHandler
 	setInterval(timeTick, 100)
 	window.onload = drawTurns
-	document.onkeydown = function(e) {if (e.code == 'KeyZ' && e.ctrlKey) {cancelTurn()}}
+	document.onkeydown = function(e) {
+		if (e.code == 'KeyZ' && e.ctrlKey) cancelTurn()
+		if (e.code == 'KeyL') keyLIsDown = true
+	}
+	document.onkeyup = function(e) {
+		if (e.code == 'KeyL') keyLIsDown = false
+	}
 	document.oncontextmenu = function () {return false}
 }
 
