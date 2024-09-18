@@ -1,11 +1,10 @@
-@import url('https://fonts.googleapis.com/css2?family=Comfortaa&family=EB+Garamond&family=Philosopher:wght@400;700&family=Sofia+Sans+Condensed:wght@300;500&display=swap');
 :root {
   /* --font: 'Philosopher', sans-serif; */
-  --font: 'Sofia Sans Condensed', sans-serif;
-  --font-title: 'EB Garamond', serif;
+  --font: 'PT Sans Narrow', sans-serif;
+  --font-title: 'Philosofer', serif;
   --font-header: 'Comfortaa', sans-serif;
   /* --font-bold: 'Philosopher', sans-serif; */
-  --font-bold: 'Sofia Sans Condensed', sans-serif;
+  --font-bold: 'PT Sans Narrow', sans-serif;
   --text: #565656;
   --fon-header: #EAC76F;
   --fon: #e0e0e0;
@@ -18,7 +17,7 @@ body {
   color: var(--text);
   font-size: 1.3rem;
   /* font-weight: 400; */
-  font-weight: 300;
+  font-weight: 400;
 }
 
 h1, h2, h3, h4, h5, h6 {
@@ -49,7 +48,7 @@ p {
 
 strong {
   font-family: var(--font-bold);
-  font-weight: 500;
+  font-weight: 700;
   color: #454545;
 }
 

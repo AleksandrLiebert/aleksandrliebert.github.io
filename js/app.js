@@ -94,7 +94,7 @@ function setContent() {
   var res = ''
   res += '<div class="d-inline-block" style="height: 1rem;" class="row"></div><div class="row">'
   res += '<div class="col-12 offset-md-3 col-md-6 text-left content-row">'
-  res += '<a class="content content-c" data="main" href="?c=main"><img class="d-inline-block" src="img/mini-icon/main.png" style="cursor: pointer; width: 2.5rem; height: 2.5rem; margin-right: 0.5rem;"><div class="content-row-text">Docendo Deus</div></a>'
+  res += '<a class="content content-c" data="main" href="?c=main"><img class="d-inline-block" src="img/mini-icon/main.png" style="cursor: pointer; width: 2.5rem; height: 2.5rem; margin-right: 0.5rem;"><div class="content-row-text">DOCENDO DEUS</div></a>'
   res += '</div>'
   res += addContent('happiness', 0)
   res += '</div><div style="height: 3rem;">&nbsp;</div>'
