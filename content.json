@@ -45,7 +45,7 @@
   },
   "happiness": {
     "name": "Счастье",
-    "links": ["worldview", "harmony", "relations", "safety", "way", "adventure", "freedom", "aesthetics"]
+    "links": ["worldview", "harmony", "relations", "power", "safety", "adventure", "freedom", "aesthetics"]
   },
   "harmony": {
     "name": "Гармония",
@@ -55,7 +55,8 @@
     "name": "Медитация"
   },
   "self-control": {
-    "name": "Самообладание"
+    "name": "Самообладание",
+    "links": ["willpower"]
   },
   "reflection": {
     "name": "Рефлексия"
@@ -87,9 +88,9 @@
   "sex": {
     "name": "Секс"
   },
-  "way": {
-    "name": "Жизненный путь",
-    "links": ["willpower", "perfectionism", "belief-in-control"]
+  "power": {
+    "name": "Власть",
+    "links": ["perfectionism", "belief-in-control"]
   },
   "perfectionism": {
     "name": "Перфекционизм"
