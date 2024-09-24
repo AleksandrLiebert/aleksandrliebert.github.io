@@ -45,7 +45,7 @@
   },
   "happiness": {
     "name": "Счастье",
-    "links": ["faith", "harmony", "relations", "safety", "way", "adventure", "freedom", "aesthetics"]
+    "links": ["worldview", "harmony", "relations", "safety", "way", "adventure", "freedom", "aesthetics"]
   },
   "harmony": {
     "name": "Гармония",
@@ -105,8 +105,8 @@
     "name": "Свобода",
     "links": ["time", "money"]
   },
-  "faith": {
-    "name": "Вера",
+  "worldview": {
+    "name": "Мировоззрение",
     "links": ["truth", "consciousness", "being", "morality", "grand-design", "principle", "canons"]
   },
   "healt": {
