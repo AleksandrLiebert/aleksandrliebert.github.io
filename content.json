@@ -100,11 +100,11 @@
   },
   "adventure": {
     "name": "Приключение",
-    "links": ["possibility", "conflict", "seduction", "gamble", "games"]
+    "links": ["conflict", "seduction", "gamble", "games"]
   },
   "freedom": {
     "name": "Свобода",
-    "links": ["time", "money"]
+    "links": ["possibility", "time", "money"]
   },
   "worldview": {
     "name": "Мировоззрение",
