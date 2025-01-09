@@ -675,8 +675,9 @@ function start(size) {
 	fieldSize = size
 	gameSettings.mode = fieldSize
 	saveSettings()
-	hideSelectMode()
-	startGame()
+	const searchParams = new URLSearchParams(window.location.search)
+	searchParams.set('size', fieldSize)
+	window.location.search = searchParams.toString()
 }
 
 function pauseHandler() {
@@ -808,8 +809,18 @@ function setEvents() {
 	document.oncontextmenu = function () {return false}
 }
 
+function getSizeFromUrl() {
+	const size = new URLSearchParams(window.location.search).get('size')
+	if (size !== null)
+		return parseInt(size)
+	const searchParams = new URLSearchParams(window.location.search)
+	searchParams.set('size', gameSettings.mode)
+	window.location.search = searchParams.toString()
+}
+
 readSettings()
 setEvents()
 //get seed from url
 currentSeed = new URLSearchParams(window.location.search).get('seed')
+fieldSize = getSizeFromUrl()
 startGame()
