@@ -3,9 +3,6 @@
     "name": "DOCENDO DEUS",
     "links": ["happiness", "resource"]
   },
-  "principle": {
-    "name": "Принципы"
-  },
   "truth": {
     "name": "Истина",
     "links": ["absolute-truth", "relative-truth", "science-truth"]
@@ -108,7 +105,7 @@
   },
   "worldview": {
     "name": "Мировоззрение",
-    "links": ["truth", "consciousness", "being", "morality", "grand-design", "principle", "canons"]
+    "links": ["truth", "consciousness", "being", "morality", "grand-design", "canons"]
   },
   "healt": {
     "name": "Здоровье"
