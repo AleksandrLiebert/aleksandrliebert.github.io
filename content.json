@@ -41,7 +41,7 @@
   },
   "harmony": {
     "name": "Гармония",
-    "links": ["being", "consciousness", "grand-design", "meditation", "self-control", "reflection", "meta-goal"]
+    "links": ["being", "consciousness", "meditation", "self-control", "reflection", "meta-goal"]
   },
   "meditation": {
     "name": "Медитация"
@@ -110,9 +110,6 @@
   },
   "being": {
     "name": "Бытие"
-  },
-  "grand-design": {
-    "name": "Высший замысел"
   },
   "rituals": {
     "name": "Ритуалы"
