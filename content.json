@@ -51,8 +51,7 @@
     "links": ["willpower"]
   },
   "reflection": {
-    "name": "Рефлексия",
-    "links": ["avoiding-contradictions"]
+    "name": "Рефлексия"
   },
   "meta-goal": {
     "name": "Сверхцель"
@@ -139,9 +138,6 @@
   },
   "base-test": {
     "name": "Вводный тест"
-  },
-  "avoiding-contradictions": {
-    "name": "Избегание противоречий"
   },
   "context": {
     "name": "Контекст"
