@@ -1,7 +1,7 @@
 {
   "main": {
     "name": "Docendo Deus",
-    "links": ["happiness", "resource"]
+    "links": ["happiness"]
   },
   "worldview": {
     "name": "Мировоззрение",
@@ -81,7 +81,7 @@
   },
   "adventure": {
     "name": "Приключение",
-    "links": ["conformism", "seduction", "conflict", "gamble", "games"]
+    "links": ["conformism", "seduction", "conflict"]
   },
   "freedom": {
     "name": "Свобода",
@@ -146,11 +146,5 @@
   },
   "arrogance": {
     "name": "Высокомерие"
-  },
-  "gamble": {
-    "name": "Азарт"
-  },
-  "games": {
-    "name": "Игры"
   }
 }
