@@ -5,7 +5,7 @@
   },
   "worldview": {
     "name": "Мировоззрение",
-    "links": ["absolute-truth", "relative-truth", "science-truth", "consciousness", "being", "grand-design"]
+    "links": ["absolute-truth", "relative-truth", "science-truth"]
   },
   "absolute-truth": {
     "name": "Абсолютная истина"
@@ -46,7 +46,7 @@
   },
   "harmony": {
     "name": "Гармония",
-    "links": ["meditation", "self-control", "reflection", "meta-goal"]
+    "links": ["consciousness", "being", "grand-design", "meditation", "self-control", "reflection", "meta-goal"]
   },
   "meditation": {
     "name": "Медитация"
