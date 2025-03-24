@@ -3,9 +3,9 @@
     "name": "DOCENDO DEUS",
     "links": ["happiness", "resource"]
   },
-  "truth": {
-    "name": "Истина",
-    "links": ["absolute-truth", "relative-truth", "science-truth"]
+  "worldview": {
+    "name": "Мировоззрение",
+    "links": ["absolute-truth", "relative-truth", "science-truth", "consciousness", "being", "grand-design"]
   },
   "absolute-truth": {
     "name": "Абсолютная истина"
@@ -102,10 +102,6 @@
   "freedom": {
     "name": "Свобода",
     "links": ["possibility", "time", "money"]
-  },
-  "worldview": {
-    "name": "Мировоззрение",
-    "links": ["truth", "consciousness", "being", "grand-design"]
   },
   "healt": {
     "name": "Здоровье"
