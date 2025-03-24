@@ -26,7 +26,7 @@
   },
   "coherent-truth": {
     "name": "Когерентная истина",
-    "links": ["avoiding-contradictions", "stereotypes", "memory", "context"]
+    "links": ["stereotypes", "memory", "context"]
   },
   "pragmatic-truth": {
     "name": "Прагматическая истина"
@@ -56,7 +56,8 @@
     "links": ["willpower"]
   },
   "reflection": {
-    "name": "Рефлексия"
+    "name": "Рефлексия",
+    "links": ["avoiding-contradictions"]
   },
   "meta-goal": {
     "name": "Сверхцель"
