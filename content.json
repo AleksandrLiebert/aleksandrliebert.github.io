@@ -26,7 +26,7 @@
   },
   "coherent-truth": {
     "name": "Когерентная истина",
-    "links": ["avoiding-contradictions", "conformism", "arrogance", "stereotypes", "memory", "context"]
+    "links": ["avoiding-contradictions", "conformism", "stereotypes", "memory", "context"]
   },
   "pragmatic-truth": {
     "name": "Прагматическая истина"
@@ -87,7 +87,7 @@
   },
   "power": {
     "name": "Власть",
-    "links": ["perfectionism", "belief-in-control"]
+    "links": ["arrogance", "perfectionism", "belief-in-control"]
   },
   "perfectionism": {
     "name": "Перфекционизм"
