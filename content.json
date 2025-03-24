@@ -47,8 +47,7 @@
     "name": "Медитация"
   },
   "self-control": {
-    "name": "Самообладание",
-    "links": ["willpower"]
+    "name": "Самообладание"
   },
   "reflection": {
     "name": "Рефлексия"
@@ -62,9 +61,6 @@
   },
   "conflict": {
     "name": "Конфликт"
-  },
-  "willpower": {
-    "name": "Сила воли"
   },
   "relations": {
     "name": "Близость",
