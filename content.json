@@ -25,8 +25,7 @@
     "name": "Дебаты"
   },
   "coherent-truth": {
-    "name": "Когерентная истина",
-    "links": ["stereotypes", "memory", "context"]
+    "name": "Когерентная истина"
   },
   "pragmatic-truth": {
     "name": "Прагматическая истина"
@@ -68,7 +67,7 @@
   },
   "aesthetics" : {
     "name": "Эстетика",
-    "links": ["sexuality"]
+    "links": ["sexuality", "context"]
   },
   "conflict": {
     "name": "Конфликт"
@@ -78,7 +77,7 @@
   },
   "relations": {
     "name": "Близость",
-    "links": ["morality", "sex", "love"]
+    "links": ["morality", "stereotypes", "sex", "love"]
   },
   "love": {
     "name": "Любовь"
@@ -88,7 +87,7 @@
   },
   "power": {
     "name": "Власть",
-    "links": ["arrogance", "perfectionism", "belief-in-control"]
+    "links": ["arrogance", "perfectionism", "belief-in-control", "memory"]
   },
   "perfectionism": {
     "name": "Перфекционизм"
