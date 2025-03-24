@@ -73,10 +73,7 @@
   },
   "relations": {
     "name": "Близость",
-    "links": ["morality", "stereotypes", "sex", "love"]
-  },
-  "love": {
-    "name": "Любовь"
+    "links": ["morality", "stereotypes", "sex"]
   },
   "sex": {
     "name": "Секс"
