@@ -26,7 +26,7 @@
   },
   "coherent-truth": {
     "name": "Когерентная истина",
-    "links": ["avoiding-contradictions", "conformism", "stereotypes", "memory", "context"]
+    "links": ["avoiding-contradictions", "stereotypes", "memory", "context"]
   },
   "pragmatic-truth": {
     "name": "Прагматическая истина"
@@ -97,7 +97,7 @@
   },
   "adventure": {
     "name": "Приключение",
-    "links": ["conflict", "seduction", "gamble", "games"]
+    "links": ["conformism", "seduction", "conflict", "gamble", "games"]
   },
   "freedom": {
     "name": "Свобода",
