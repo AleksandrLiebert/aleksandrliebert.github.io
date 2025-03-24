@@ -37,7 +37,7 @@
   },
   "happiness": {
     "name": "Счастье",
-    "links": ["worldview", "harmony", "relations", "power", "safety", "adventure", "freedom", "aesthetics"]
+    "links": ["worldview", "harmony", "relations", "power", "healt", "adventure", "freedom", "aesthetics"]
   },
   "harmony": {
     "name": "Гармония",
@@ -56,10 +56,6 @@
   },
   "meta-goal": {
     "name": "Сверхцель"
-  },
-  "safety": {
-    "name": "Безопасность",
-    "links": ["healt"]
   },
   "aesthetics" : {
     "name": "Эстетика",
