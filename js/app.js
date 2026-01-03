@@ -5,28 +5,32 @@ function setTitle(text) {
 
 function setCategory(id){
   var category = content[id]
+  const sigil = document.querySelector('#sigil')
 
   $.ajax({
     url: 'content/' + id + '.md',
     type: 'get',
     error: function(XMLHttpRequest, textStatus, errorThrown){
       if (id == 'main') {
-        $('#sigil').html('<img src="img/' + id + '.png" width="100%">')
+        sigil.style.setProperty('mask-image', 'url(img/' + id + '.png)')
+        sigil.classList.remove('d-none')
       } else {
-        $('#sigil').html('')
+        sigil.classList.add('d-none')
       }
       $('.title').text(category.name)
 
-       $('#content').text('Контент в разработке')
-       $('#category').fadeIn(400)
-       resizeWindow()
-       setTitle('Not Found')
+      $('#content').text('Контент в разработке')
+      $('#category').fadeIn(400)
+      resizeWindow()
+      setTitle('Not Found')
     },
     success: function(data){
       if (id == 'main') {
-        $('#sigil').html('<img src="img/' + id + '.png" width="100%">')
+        sigil.style.setProperty('mask-image', 'url(img/' + id + '.png)')
+        sigil.classList.remove('d-none')
       } else {
-        $('#sigil').html('')
+        sigil.style.removeProperty('mask-image')
+        sigil.classList.add('d-none')
       }
       $('.title').text(category.name)
       if (category['edit'] != null){
@@ -57,24 +61,24 @@ function setCategory(id){
 
 function addContent(c, shift, last) {
     var value = content[c]
-    var res = '<div class="col-12 offset-md-3 col-md-6 text-left content-row" style="height: 2rem;">'
+    var res = '<div class="col-12 offset-md-3 col-md-6 text-left content-row d-flex align-items-center" style="height: 2rem; flex-wrap: nowrap;">'
     for (var i = 0; i < shift; i++) {
       if (i + 1 !== shift) {
           if (last[i]) {
-              res += '<img class="d-inline-block" src="img/tree/space.png" style="width: 1.5rem; height: 2rem;" />'
+            res += '<div class="tree-block"></div>'
           } else {
-              res += '<img class="d-inline-block" src="img/tree/line.png" style="width: 1.5rem; height: 2rem;" />'
+            res += '<div class="tree-block tree-line"></div>'
           }
       } else {
           if (last[i]) {
-              res += '<img class="d-inline-block" src="img/tree/angle.png" style="width: 1.5rem; height: 2rem;" />'
+            res += '<div class="tree-block tree-angle"></div>'
           } else {
-              res += '<img class="d-inline-block" src="img/tree/branch.png" style="width: 1.5rem; height: 2rem;" />'
+            res += '<div class="tree-block tree-branch"></div>'
           }
       }
   }
 
-    res += '<a class="content content-c" data="' + c + '" href="?c=' + c + '"><div class="content-row-text">&nbsp;'  + value.name + '</div></a>'
+    res += '<a class="content content-c d-inline-block" data="' + c + '" href="?c=' + c + '" style="line-height: 2rem; vertical-align: top;"><span class="content-row-text">&nbsp;'  + value.name + '</span></a>'
     res += '</div>'
     for (var i in value.links) {
         if (last !== undefined) {
@@ -93,8 +97,8 @@ function addContent(c, shift, last) {
 function setContent() {
   var res = ''
   res += '<div class="d-inline-block" style="height: 1rem;" class="row"></div><div class="row">'
-  res += '<div class="col-12 offset-md-3 col-md-6 text-left content-row">'
-  res += '<a class="content content-c" data="main" href="?c=main"><img class="d-inline-block" src="img/mini-icon/main.png" style="cursor: pointer; width: 2.5rem; height: 2.5rem; margin-right: 0.5rem;"><div class="content-row-text">Docendo Deus</div></a>'
+  res += '<div class="col-12 offset-md-3 col-md-6 text-center content-row d-flex align-items-center justify-content-center" style="height: 2rem; flex-wrap: nowrap;">'
+  res += '<a class="content content-c d-inline-block" data="main" href="?c=main" style="line-height: 2rem; vertical-align: top;"><span class="content-row-text">Docendo Deus</span></a>'
   res += '</div>'
   res += addContent('happiness', 0)
   res += '</div><div style="height: 3rem;">&nbsp;</div>'

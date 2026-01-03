@@ -1,13 +1,11 @@
 :root {
-  /* --font: 'Philosopher', sans-serif; */
-  --font: 'PT Sans Narrow', sans-serif;
-  --font-title: 'Philosofer', serif;
-  --font-header: 'Comfortaa', sans-serif;
-  /* --font-bold: 'Philosopher', sans-serif; */
-  --font-bold: 'PT Sans Narrow', sans-serif;
-  --text: #565656;
-  --fon-header: #EAC76F;
-  --fon: #e0e0e0;
+  --font: 'Philosopher', Georgia, 'Cambria', 'Times New Roman', serif;
+  --font-title: 'IBM Plex Sans', 'Lucida Grande', Arial, sans-serif, sans-serif;
+  --font-header: 'Comfortaa', 'Lucida Grande', Arial, sans-serif, sans-serif;
+  --text: #888888;
+  --highlight-text: #999999;
+  --fon-header: #222222;
+  --fon: #111111;
 }
 
 
@@ -15,7 +13,7 @@ body {
   background-color: var(--fon);
   font-family: var(--font);
   color: var(--text);
-  font-size: 1.3rem;
+  font-size: 1.1rem;
   /* font-weight: 400; */
   font-weight: 400;
 }
@@ -47,9 +45,37 @@ p {
 }
 
 strong {
-  font-family: var(--font-bold);
-  font-weight: 700;
-  color: #454545;
+  color: var(--highlight-text);
+}
+
+.tree-block {
+  display: inline-block;
+  width: 1.5rem;
+  height: 2rem;
+}
+
+.tree-line {
+  background-color: var(--text);
+  mask-image: url('../img/tree/line.png');
+  mask-size: contain;
+  mask-repeat: no-repeat;
+  mask-position: center;
+}
+
+.tree-angle {
+  background-color: var(--text);
+  mask-image: url('../img/tree/angle.png');
+  mask-size: contain;
+  mask-repeat: no-repeat;
+  mask-position: center;
+}
+
+.tree-branch {
+  background-color: var(--text);
+  mask-image: url('../img/tree/branch.png');
+  mask-size: contain;
+  mask-repeat: no-repeat;
+  mask-position: center;
 }
 
 textarea:focus,
@@ -194,7 +220,7 @@ input[type="radio"] {
   left: 0;
   bottom: 0;
   position: fixed;
-  background-color: #D4D4D4;
+  background-color: var(--fon-header);
   width: 100%;
   z-index: 1;
 }
@@ -203,6 +229,14 @@ input[type="radio"] {
   height: 0;
   width: 100%;
   display: inline-block;
+}
+
+#sigil {
+  background-color: var(--text);
+  aspect-ratio: 1 / 1;
+  mask-size: contain;
+  mask-repeat: no-repeat;
+  mask-position: center;
 }
 
 @media (min-width: 576px) {
@@ -217,7 +251,7 @@ input[type="radio"] {
   }
 
   .shift-for-titile {
-    height: 4rem;
+    height: 5rem;
   }
 
   #sigil {
