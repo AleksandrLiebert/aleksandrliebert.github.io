@@ -57,7 +57,7 @@
   },
   "aesthetics" : {
     "name": "Эстетика",
-    "links": ["sexuality", "context"]
+    "links": ["context"]
   },
   "conflict": {
     "name": "Конфликт"
@@ -67,7 +67,8 @@
     "links": ["morality", "stereotypes", "sex"]
   },
   "sex": {
-    "name": "Секс"
+    "name": "Секс",
+    "links": ["sexuality"]
   },
   "power": {
     "name": "Власть",
